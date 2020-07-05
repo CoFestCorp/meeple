@@ -58,17 +58,21 @@ function HomeScreen({ navigation }) {
 function LoginScreen() {
   return (
     <SafeAreaView style={stylesLogIn.container}>
-      <View style={styles.login2}>
-        <TextInput style={styles.loginU}></TextInput>
+      <Image
+        style={styles.loginLogo}
+        fadeDuration={1000}
+        source={require("./Images/logo_transparent.png")}
+      />
+      <View style={styles.details}>
+        <TextInput placeholder="username or email" style={styles.input} />
+        <TextInput placeholder="password" style={styles.input} />
       </View>
-      <View style={styles.login2}>
-        <TextInput style={styles.loginP}></TextInput>
-      </View>
+
       <TouchableOpacity
         onPress={() => navigation.navigate("Login")}
-        style={styles.login2}
+        style={styles.login3}
       >
-        <Text style={styles.loginT}>Log in</Text>
+        <Text style={styles.loginT2}>Log in</Text>
       </TouchableOpacity>
     </SafeAreaView>
   );
