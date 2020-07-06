@@ -55,7 +55,7 @@ function HomeScreen({ navigation }) {
   );
 }
 
-function LoginScreen({navigation}) {
+function LoginScreen({navi}) {
   return (
     <SafeAreaView style={stylesLogIn.container}>
       <Image

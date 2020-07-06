@@ -69,7 +69,7 @@ function LoginScreen({navigation}) {
       </View>
 
       <TouchableOpacity
-        onPress={() => navigation.navigate("UserHome")}
+        onPress={() => navigation.navigate("Login")}
         style={styles.login3}
       >
         <Text style={styles.loginT2}>Log in</Text>

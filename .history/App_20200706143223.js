@@ -55,7 +55,7 @@ function HomeScreen({ navigation }) {
   );
 }
 
-function LoginScreen({navigation}) {
+function LoginScreen() {
   return (
     <SafeAreaView style={stylesLogIn.container}>
       <Image
@@ -69,7 +69,7 @@ function LoginScreen({navigation}) {
       </View>
 
       <TouchableOpacity
-        onPress={() => navigation.navigate("UserHome")}
+        onPress={() => navigation.navigate("Login")}
         style={styles.login3}
       >
         <Text style={styles.loginT2}>Log in</Text>
@@ -117,22 +117,11 @@ function QRegisterScreen() {
   );
 }
 
-function UserHomeScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Register Screen</Text>
-    </View>
-  );
-}
-
-
 class Hidden extends React.Component {
   render() {
     return null;
   }
 }
-
-
 
 const Stack = createStackNavigator();
 
