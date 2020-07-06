@@ -37,9 +37,6 @@ const stylesLogIn = StyleSheet.create({
     left: 125,
     bottom: -15,
   },
-
-  loginU: {},
-  loginP: {},
 });
 
 const styles = StyleSheet.create({
@@ -88,6 +85,18 @@ const styles = StyleSheet.create({
     shadowColor: "black",
     shadowOpacity: 0.1,
   },
+  login3: {
+    width: 305,
+    height: 58,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#9b4ae6",
+    borderRadius: 24,
+    shadowOffset: { width: 5, height: 5 },
+    shadowColor: "black",
+    shadowOpacity: 0.1,
+    margin: 30,
+  },
 
   loginT: {
     color: "black",
@@ -96,6 +105,32 @@ const styles = StyleSheet.create({
     lineHeight: 25,
     left: 117,
     bottom: -20,
+  },
+
+  loginT2: {
+    color: "white",
+    fontWeight: "bold",
+    fontSize: 25,
+  },
+  details: {
+    marginLeft: 30,
+    marginBottom: 40,
+  },
+  input: {
+    width: 305,
+    height: 58,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "white",
+    borderRadius: 24,
+    paddingHorizontal: 10,
+    marginBottom: 20,
+  },
+  loginLogo: {
+    width: 175,
+    height: 172,
+    marginLeft: 90,
+    top: -25,
   },
 
   btm: {
