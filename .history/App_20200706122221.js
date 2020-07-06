@@ -65,7 +65,7 @@ function HomeScreen({ navigation }) {
   );
 }
 
-function LoginScreen({ navigation }) {
+function LoginScreen() {
   return (
     <SafeAreaView style={stylesLogIn.container}>
       <View style={styles.login2}>
@@ -84,7 +84,7 @@ function LoginScreen({ navigation }) {
   );
 }
 
-function RegisterScreen({ navigation }) {
+function RegisterScreen() {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text>Register Screen</Text>
@@ -92,7 +92,7 @@ function RegisterScreen({ navigation }) {
   );
 }
 
-function QRegisterScreen({ navigation }) {
+function QRegisterScreen() {
   return (
     <View style={styles.QRegScreen}>
       <Image
@@ -123,14 +123,13 @@ function QRegisterScreen({ navigation }) {
   );
 }
 
-function UserHomeScreen({ navigation }) {
+function UserHomeScreen() {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text>Register Screen</Text>
     </View>
   );
 }
-
 
 class Hidden extends React.Component {
   render() {
@@ -166,6 +165,7 @@ function App() {
           component={RegisterScreen}
         />
         <Stack.Screen
+          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="UserHome"
           component={UserHomeScreen}

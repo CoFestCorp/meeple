@@ -65,7 +65,7 @@ function HomeScreen({ navigation }) {
   );
 }
 
-function LoginScreen({ navigation }) {
+function LoginScreen() {
   return (
     <SafeAreaView style={stylesLogIn.container}>
       <View style={styles.login2}>
@@ -84,7 +84,7 @@ function LoginScreen({ navigation }) {
   );
 }
 
-function RegisterScreen({ navigation }) {
+function RegisterScreen() {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text>Register Screen</Text>
@@ -92,7 +92,7 @@ function RegisterScreen({ navigation }) {
   );
 }
 
-function QRegisterScreen({ navigation }) {
+function QRegisterScreen() {
   return (
     <View style={styles.QRegScreen}>
       <Image
@@ -119,14 +119,6 @@ function QRegisterScreen({ navigation }) {
       >
         <Text style={styles.submitText}>Submit</Text>
       </TouchableOpacity>
-    </View>
-  );
-}
-
-function UserHomeScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Register Screen</Text>
     </View>
   );
 }
@@ -166,6 +158,7 @@ function App() {
           component={RegisterScreen}
         />
         <Stack.Screen
+          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="UserHome"
           component={UserHomeScreen}
@@ -175,4 +168,18 @@ function App() {
   );
 }
 
+function UserHomeScreen() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          options={{ headerShown: false }}
+          styles={stylesApp.title}
+          name="UserHome"
+          component={UserHomeScreen}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
 export default App;

@@ -3,6 +3,7 @@ import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import {
+  StyleSheet,
   Image,
   SafeAreaView,
   Button,
@@ -16,18 +17,7 @@ import stylesApp from "./css";
 import stylesLogIn from "./css";
 import styles from "./css";
 
-
-
-
-
-
-const Stack = createStackNavigator();
-
-
-
-
-
-
+TouchableOpacity.defaultProps = { activeOpacity: 0.1 };
 
 function HomeScreen({ navigation }) {
   return (
@@ -65,7 +55,7 @@ function HomeScreen({ navigation }) {
   );
 }
 
-function LoginScreen({ navigation }) {
+function LoginScreen() {
   return (
     <SafeAreaView style={stylesLogIn.container}>
       <View style={styles.login2}>
@@ -75,7 +65,7 @@ function LoginScreen({ navigation }) {
         <TextInput style={styles.loginP}></TextInput>
       </View>
       <TouchableOpacity
-        onPress={() => navigation.navigate("UserHome")}
+        onPress={() => navigation.navigate("Login")}
         style={styles.login2}
       >
         <Text style={styles.loginT}>Log in</Text>
@@ -84,7 +74,7 @@ function LoginScreen({ navigation }) {
   );
 }
 
-function RegisterScreen({ navigation }) {
+function RegisterScreen() {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text>Register Screen</Text>
@@ -92,7 +82,7 @@ function RegisterScreen({ navigation }) {
   );
 }
 
-function QRegisterScreen({ navigation }) {
+function QRegisterScreen() {
   return (
     <View style={styles.QRegScreen}>
       <Image
@@ -123,7 +113,7 @@ function QRegisterScreen({ navigation }) {
   );
 }
 
-function UserHomeScreen({ navigation }) {
+function UserHome() {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text>Register Screen</Text>
@@ -131,14 +121,13 @@ function UserHomeScreen({ navigation }) {
   );
 }
 
-
 class Hidden extends React.Component {
   render() {
     return null;
   }
 }
 
-
+const Stack = createStackNavigator();
 
 function App() {
   return (
@@ -168,9 +157,11 @@ function App() {
         <Stack.Screen
           styles={stylesApp.title}
           name="UserHome"
-          component={UserHomeScreen}
+          component={UserHome}
         />
+
       </Stack.Navigator>
+
     </NavigationContainer>
   );
 }

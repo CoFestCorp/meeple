@@ -123,14 +123,6 @@ function QRegisterScreen({ navigation }) {
   );
 }
 
-function UserHomeScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Register Screen</Text>
-    </View>
-  );
-}
-
 
 class Hidden extends React.Component {
   render() {
@@ -166,6 +158,7 @@ function App() {
           component={RegisterScreen}
         />
         <Stack.Screen
+          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="UserHome"
           component={UserHomeScreen}

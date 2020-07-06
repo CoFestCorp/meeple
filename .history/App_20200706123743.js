@@ -123,7 +123,7 @@ function QRegisterScreen({ navigation }) {
   );
 }
 
-function UserHomeScreen({ navigation }) {
+function RegisterScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text>Register Screen</Text>
@@ -166,6 +166,7 @@ function App() {
           component={RegisterScreen}
         />
         <Stack.Screen
+          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="UserHome"
           component={UserHomeScreen}

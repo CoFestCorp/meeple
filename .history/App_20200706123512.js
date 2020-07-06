@@ -75,7 +75,7 @@ function LoginScreen({ navigation }) {
         <TextInput style={styles.loginP}></TextInput>
       </View>
       <TouchableOpacity
-        onPress={() => navigation.navigate("UserHome")}
+        onPress={() => navigation.navigate("UserHomeScreen")}
         style={styles.login2}
       >
         <Text style={styles.loginT}>Log in</Text>
@@ -92,7 +92,7 @@ function RegisterScreen({ navigation }) {
   );
 }
 
-function QRegisterScreen({ navigation }) {
+function QRegisterScreen() {
   return (
     <View style={styles.QRegScreen}>
       <Image
@@ -119,14 +119,6 @@ function QRegisterScreen({ navigation }) {
       >
         <Text style={styles.submitText}>Submit</Text>
       </TouchableOpacity>
-    </View>
-  );
-}
-
-function UserHomeScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Register Screen</Text>
     </View>
   );
 }
@@ -166,6 +158,7 @@ function App() {
           component={RegisterScreen}
         />
         <Stack.Screen
+          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="UserHome"
           component={UserHomeScreen}
