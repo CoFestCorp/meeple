@@ -11,6 +11,7 @@ import { TouchableOpacity, AppRegistry } from "react-native";
 import stylesApp from "./css";
 import RecoveryCodeScreen from "./Screens/RecoveryCode";
 import PhoneNumberScreen from "./Screens/PhoneNumberRecovery";
+import NewPasswordScreenScreen from "./Screens/NewPassword";
 
 TouchableOpacity.defaultProps = { activeOpacity: 0.1 };
 
@@ -61,6 +62,11 @@ function App() {
           styles={stylesApp.title}
           name="PhoneNumberRecovery"
           component={PhoneNumberScreen}
+        />
+        <Stack.Screen
+          styles={stylesApp.title}
+          name="NewPassword"
+          component={NewPasswordScreenScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>
