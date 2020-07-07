@@ -22,15 +22,19 @@ function VerifyCodeScreen({ navigation }) {
         fadeDuration={1000}
         source={require("../Images/logo_transparent.png")}
       />
-      <View style={styles.details}>
-        <TextInput placeholder="Confirmation code" style={styles.input} />
-        <TouchableOpacity
-          onPress={() => navigation.navigate("UserHome")}
-          style={styles.signup}
-        >
-          <Text style={styles.loginT2}>Submit</Text>
-        </TouchableOpacity>
+      <View style={styles.RegBox}>
+        <Text style={styles.RegText}>Verification code</Text>
+        <Text style={styles.RegInfo}>
+          Please enter the verification code you received via text.
+        </Text>
       </View>
+      <TextInput placeholder="Confirmation code" style={styles.input} />
+      <TouchableOpacity
+        onPress={() => navigation.navigate("UserHome")}
+        style={styles.signup}
+      >
+        <Text style={styles.loginT2}>Submit</Text>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 }
