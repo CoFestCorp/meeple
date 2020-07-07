@@ -1,21 +1,24 @@
 import "react-native-gesture-handler";
 import * as React from "react";
+
 import {
   Image,
   SafeAreaView,
   View,
   Text,
   TextInput,
+  Touchable,
   TouchableOpacity,
+  Item,
+  Input,
+  Logo,
 } from "react-native";
 import styles from "../css";
-import stylesLogIn from "../css";
-import App from "../App";
 import { MaterialCommunityIcons as Icon } from "@expo/vector-icons";
 
 function LoginScreen({ navigation }) {
   return (
-    <SafeAreaView style={stylesLogIn.container}>
+    <SafeAreaView style={styles.container}>
       <Image
         style={styles.loginLogo}
         fadeDuration={1000}
@@ -42,4 +45,5 @@ function LoginScreen({ navigation }) {
     </SafeAreaView>
   );
 }
+
 export default LoginScreen;

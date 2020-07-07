@@ -7,38 +7,6 @@ const stylesApp = StyleSheet.create({
   },
 });
 
-const stylesLogIn = StyleSheet.create({
-  container: {
-    width: 420,
-    height: 1000,
-    backgroundColor: "#FCD2FF",
-  },
-
-  title: {
-    left: 50,
-  },
-
-  login2: {
-    width: 305,
-    height: 58,
-    left: 55,
-    top: 520,
-    backgroundColor: "white",
-    borderRadius: 24,
-    shadowOffset: { width: 5, height: 5 },
-    shadowColor: "black",
-    shadowOpacity: 0.1,
-  },
-
-  loginT: {
-    color: "black",
-    fontSize: 20,
-    lineHeight: 25,
-    left: 125,
-    bottom: -15,
-  },
-});
-
 const styles = StyleSheet.create({
   container: {
     width: 420,
@@ -96,6 +64,7 @@ const styles = StyleSheet.create({
     shadowColor: "black",
     shadowOpacity: 0.1,
     margin: 30,
+    left: 15,
   },
 
   loginT: {
@@ -125,18 +94,32 @@ const styles = StyleSheet.create({
     borderRadius: 24,
     paddingHorizontal: 10,
     marginBottom: 20,
+    left: 15,
   },
   loginLogo: {
     width: 175,
     height: 172,
-    marginLeft: 90,
+    marginLeft: 120,
     top: -25,
   },
   icon: {
     top: -61,
     left: 265,
+    left: 275,
+    color: "gray",
   },
-
+  signup: {
+    width: 305,
+    height: 58,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#9b4ae6",
+    borderRadius: 24,
+    shadowOffset: { width: 5, height: 5 },
+    shadowColor: "black",
+    shadowOpacity: 0.1,
+    left: 15,
+  },
   btm: {
     top: 40,
     left: 110,
@@ -149,21 +132,30 @@ const styles = StyleSheet.create({
     width: 165,
   },
 
+  //changes made below
   QRegScreen: {
-    backgroundColor: "#FCD2FF",
+    backgroundColor: "#52307c",
     flex: 1,
     alignItems: "center",
   },
 
   RecoveryText: {
     color: "white",
-    backgroundColor: "#9b4ae6",
-    fontSize: 30,
+    fontSize: 25,
     fontWeight: "bold",
     width: 400,
     height: 45,
-    top: -77,
-    textAlign: "center",
+    top: -60,
+    left: 20,
+  },
+
+  RecoveryInfo: {
+    color: "white",
+    fontSize: 16,
+    width: 240,
+    height: 45,
+    top: -65,
+    left: -60,
   },
 
   PhoneNumber: {
@@ -171,44 +163,43 @@ const styles = StyleSheet.create({
     fontSize: 25,
     width: 165,
     height: 30,
-    top: 0,
+    top: 40,
     left: -95,
   },
 
   EmailTitle: {
-    color: "black",
+    color: "white",
     fontSize: 25,
     width: 160,
     height: 30,
-    top: -25,
-    left: -100,
+    top: 50,
+    left: -75,
   },
 
   EmailInput: {
+    width: 305,
+    height: 58,
     backgroundColor: "white",
-    width: 250,
-    height: 40,
-    borderColor: "black",
-    borderWidth: 2,
-    top: -20,
-    left: -55,
+    top: 60,
+    right: 25,
+    borderRadius: 24,
+    paddingHorizontal: 10,
+    marginBottom: 20,
   },
 
   PhoneInput: {
     backgroundColor: "white",
     width: 250,
     height: 40,
-    borderColor: "black",
-    borderWidth: 2,
-    top: 5,
+    top: 45,
     left: -55,
   },
 
   RecoverySubmit: {
-    width: 260,
-    height: 58,
+    width: 300,
+    height: 40,
     backgroundColor: "white",
-    top: 180,
+    top: 220,
     left: 0,
     borderRadius: 24,
     shadowOffset: { width: 5, height: 5 },
@@ -222,22 +213,112 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 25,
     lineHeight: 25,
-    bottom: -20,
+    bottom: -10,
   },
 
   Recoverylogo: {
     width: 175,
     height: 172,
-    left: 0,
+    left: -140,
     top: -25,
   },
 
-  RecoveryInfo: {
+  ForgotEmailbtn: {
+    color: "white",
+    top: 0,
+    left: 0,
+  },
+  ForgotEmailbtnDesign: {
+    top: 45,
+    left: 60,
+  },
+  PhoneRecInfo: {
+    color: "white",
+    fontSize: 16,
+    width: 340,
+    height: 85,
+    top: -65,
+    left: -10,
+  },
+
+  phoneTitle: {
+    color: "white",
+    fontSize: 25,
+    width: 200,
+    height: 30,
+    top: 5,
+    left: -60,
+  },
+
+  PhoneInput: {
+    width: 305,
+    height: 58,
+    backgroundColor: "white",
+    top: 15,
+    right: 25,
+    borderRadius: 24,
+    paddingHorizontal: 10,
+    marginBottom: 20,
+  },
+
+  RecoverySubmit2: {
+    width: 300,
+    height: 40,
+    backgroundColor: "white",
+    top: 200,
+    left: 0,
+    borderRadius: 24,
+    shadowOffset: { width: 5, height: 5 },
+    shadowColor: "black",
+    shadowOpacity: 0.1,
+  },
+
+  submitText2: {
+    textAlign: "center",
+    color: "black",
     fontWeight: "bold",
-    fontSize: 15,
-    width: 380,
-    right: 0,
-    top: -50,
+    fontSize: 25,
+    lineHeight: 25,
+    bottom: -10,
+  },
+
+  CodeTitle: {
+    color: "white",
+    fontSize: 25,
+    width: 200,
+    height: 30,
+    top: 5,
+    left: -60,
+  },
+
+  CodeInput: {
+    width: 305,
+    height: 58,
+    backgroundColor: "white",
+    top: 15,
+    right: 25,
+    borderRadius: 24,
+    paddingHorizontal: 10,
+    marginBottom: 20,
+  },
+
+  CodeText: {
+    color: "white",
+    fontSize: 25,
+    fontWeight: "bold",
+    width: 400,
+    height: 45,
+    top: -60,
+    left: 20,
+  },
+
+  CodeInfo: {
+    color: "white",
+    fontSize: 16,
+    width: 280,
+    height: 45,
+    top: -65,
+    left: -40,
   },
 });
 
