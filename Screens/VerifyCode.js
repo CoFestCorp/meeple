@@ -28,7 +28,7 @@ function VerifyCodeScreen({ navigation }) {
           Please enter the verification code you received via text.
         </Text>
       </View>
-      <TextInput placeholder="Confirmation code" style={styles.input} />
+      <TextInput placeholder="Verification code" style={styles.input} />
       <TouchableOpacity
         onPress={() => navigation.navigate("UserHome")}
         style={styles.signup}
