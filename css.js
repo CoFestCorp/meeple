@@ -7,7 +7,6 @@ const stylesApp = StyleSheet.create({
   },
 });
 
-
 const styles = StyleSheet.create({
   container: {
     width: 420,
@@ -65,7 +64,7 @@ const styles = StyleSheet.create({
     shadowColor: "black",
     shadowOpacity: 0.1,
     margin: 30,
-    left: 15
+    left: 15,
   },
 
   loginT: {
@@ -95,7 +94,7 @@ const styles = StyleSheet.create({
     borderRadius: 24,
     paddingHorizontal: 10,
     marginBottom: 20,
-    left: 15
+    left: 15,
   },
   loginLogo: {
     width: 175,
@@ -307,6 +306,50 @@ const styles = StyleSheet.create({
     width: 280,
     height: 45,
     top: -65,
+    left: -40,
+  },
+  RecoverySubmit3: {
+    width: 300,
+    height: 40,
+    backgroundColor: "white",
+    top: 70,
+    left: 0,
+    borderRadius: 24,
+    shadowOffset: { width: 5, height: 5 },
+    shadowColor: "black",
+    shadowOpacity: 0.1,
+  },
+
+  submitText3: {
+    textAlign: "center",
+    color: "black",
+    fontWeight: "bold",
+    fontSize: 25,
+    lineHeight: 25,
+    bottom: -10,
+  },
+  iconRec1: {
+    top: -45,
+    left: 93,
+  },
+  iconRec2: {
+    top: -45,
+    left: 93,
+  },
+  NewTitle: {
+    color: "white",
+    fontSize: 25,
+    width: 200,
+    height: 30,
+    top: 5,
+    left: -60,
+  },
+  ConfirmTitle: {
+    color: "white",
+    fontSize: 25,
+    width: 250,
+    height: 30,
+    top: 5,
     left: -40,
   },
 });
