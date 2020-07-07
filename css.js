@@ -132,6 +132,11 @@ const styles = StyleSheet.create({
     marginLeft: 90,
     top: -25,
   },
+  icon: {
+    top: -61,
+    left: 265,
+    color: "gray",
+  },
 
   btm: {
     top: 40,
