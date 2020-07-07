@@ -7,7 +7,7 @@ import {
     TouchableOpacity, 
     Image 
 } from "react-native";
-import styles from '../css';
+import styles from ''
 
 function UserHomeScreen({ navigation }) {
     return (
