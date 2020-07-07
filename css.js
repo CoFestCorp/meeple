@@ -104,10 +104,22 @@ const styles = StyleSheet.create({
   },
   icon: {
     top: -61,
+    left: 265,
     left: 275,
     color: "gray",
   },
-
+  signup: {
+    width: 305,
+    height: 58,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#9b4ae6",
+    borderRadius: 24,
+    shadowOffset: { width: 5, height: 5 },
+    shadowColor: "black",
+    shadowOpacity: 0.1,
+    left: 15,
+  },
   btm: {
     top: 40,
     left: 110,
