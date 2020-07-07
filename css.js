@@ -135,7 +135,6 @@ const styles = StyleSheet.create({
   icon: {
     top: -61,
     left: 265,
-    color: "gray",
   },
 
   btm: {
