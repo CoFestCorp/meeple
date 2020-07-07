@@ -7,12 +7,17 @@ import {
     TouchableOpacity, 
     Image 
 } from "react-native";
-import styles from '../css';
+import CardSwiper from 'react-native-card-swipe'
+
+
+
 
 function UserHomeScreen({ navigation }) {
     return (
-        <View style={styles.container}>
-           
+        <View>
+            <Text>
+                Hello
+            </Text>
         </View>
     );
 }

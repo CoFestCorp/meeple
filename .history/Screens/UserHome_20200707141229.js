@@ -7,12 +7,17 @@ import {
     TouchableOpacity, 
     Image 
 } from "react-native";
-import styles from '../css';
+import Sidebar from 'react-side-bar';
+
+
+
 
 function UserHomeScreen({ navigation }) {
     return (
-        <View style={styles.container}>
-           
+        <View>
+            <Text>
+                Hello
+            </Text>
         </View>
     );
 }

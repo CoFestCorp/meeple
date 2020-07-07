@@ -7,12 +7,17 @@ import {
     TouchableOpacity, 
     Image 
 } from "react-native";
-import styles from '../css';
+npm install--save / react - native - chanel - menu
+
+
+
 
 function UserHomeScreen({ navigation }) {
     return (
-        <View style={styles.container}>
-           
+        <View>
+            <Text>
+                Hello
+            </Text>
         </View>
     );
 }
