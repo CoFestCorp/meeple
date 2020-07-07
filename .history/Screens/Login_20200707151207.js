@@ -30,7 +30,7 @@ function LoginScreen({ navigation }) {
       <View style={styles.details}>
         <TextInput placeholder="    username or email" style={styles.input} />
         <TextInput
-         placeholder="    password"
+         placeholder=" password"
           style={styles.input}
           secureTextEntry={true}
         />
