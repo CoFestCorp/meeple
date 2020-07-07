@@ -12,7 +12,8 @@ import stylesApp from "./css";
 import RecoveryCodeScreen from "./Screens/RecoveryCode";
 import PhoneNumberScreen from "./Screens/PhoneNumberRecovery";
 import NewPasswordScreenScreen from "./Screens/NewPassword";
-
+import VerifyScreen from "./Screens/Verify";
+import VerifyCodeScreen from "./Screens/VerifyCode";
 TouchableOpacity.defaultProps = { activeOpacity: 0.1 };
 
 class Hidden extends React.Component {
@@ -47,6 +48,16 @@ function App() {
           styles={stylesApp.title}
           name="Register"
           component={RegisterScreen}
+        />
+        <Stack.Screen
+          styles={stylesApp.title}
+          name="Verify"
+          component={VerifyScreen}
+        />
+        <Stack.Screen
+          styles={stylesApp.title}
+          name="VerifyCode"
+          component={VerifyCodeScreen}
         />
         <Stack.Screen
           styles={stylesApp.title}

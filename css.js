@@ -120,6 +120,12 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     left: 15,
   },
+  signupLogo: {
+    width: 100,
+    height: 97,
+    marginLeft: 140,
+    top: 0,
+  },
   btm: {
     top: 40,
     left: 110,
