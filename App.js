@@ -9,6 +9,8 @@ import HomeScreen from "./Screens/Home";
 import QRegisterScreen from "./Screens/QRegistry";
 import { TouchableOpacity, AppRegistry } from "react-native";
 import stylesApp from "./css";
+import RecoveryCodeScreen from "./Screens/RecoveryCode";
+import PhoneNumberScreen from "./Screens/PhoneNumberRecovery";
 
 TouchableOpacity.defaultProps = { activeOpacity: 0.1 };
 
@@ -49,6 +51,16 @@ function App() {
           styles={stylesApp.title}
           name="UserHome"
           component={UserHomeScreen}
+        />
+        <Stack.Screen
+          styles={stylesApp.title}
+          name="RecoveryCode"
+          component={RecoveryCodeScreen}
+        />
+        <Stack.Screen
+          styles={stylesApp.title}
+          name="PhoneNumberRecovery"
+          component={PhoneNumberScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>
