@@ -7,16 +7,19 @@ import {
   View,
   Text,
   TextInput,
-  Touchable,
   TouchableOpacity,
   Item,
   Input,
-  Logo,
+  Logo
 } from "react-native";
 import styles from "../css";
 import { MaterialCommunityIcons as Icon } from "@expo/vector-icons";
 
+
 function LoginScreen({ navigation }) {
+  state = {
+    password:' ',
+  };
   return (
     <SafeAreaView style={styles.container}>
       <Image
@@ -25,9 +28,9 @@ function LoginScreen({ navigation }) {
         source={require("../Images/logo_transparent.png")}
       />
       <View style={styles.details}>
-        <TextInput placeholder="    username or email" style={styles.input} />
+        <TextInput placeholder="  username or email" style={styles.input} />
         <TextInput
-          placeholder="password"
+         placeholder=" password"
           style={styles.input}
           secureTextEntry={true}
         />
