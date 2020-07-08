@@ -25,17 +25,17 @@ function RegisterScreen({ navigation }) {
       <View style={styles.details}>
         <TextInput placeholder="  Your Name" style={styles.input} />
         <TextInput
-          placeholder="  Your Date of Birth DD/MM/YYYY"
+          placeholder="Your Date of Birth DD/MM/YYYY"
           style={styles.input}
         />
-        <TextInput placeholder="  Your email" style={styles.input} />
+        <TextInput placeholder="Your email" style={styles.input} />
         <TextInput
-          placeholder="  Select a Password"
+          placeholder="Select a Password"
           style={styles.input}
           secureTextEntry={true}
         />
         <TextInput
-          placeholder="  Confirm Password"
+          placeholder="Confirm Password"
           style={styles.input}
           secureTextEntry={true}
         />
