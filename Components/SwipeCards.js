@@ -11,11 +11,11 @@ import {
 const SCREEN_HEIGHT = Dimensions.get("window").height;
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const Foods = [
-  { id: "1", uri: require("../Images/logo.png") },
-  { id: "2", uri: require("../Images/logo.png") },
-  { id: "3", uri: require("../Images/logo.png") },
-  { id: "4", uri: require("../Images/logo.png") },
-  { id: "5", uri: require("../Images/logo.png") },
+  { id: "1", uri: require("../Images/1.jpg") },
+  { id: "2", uri: require("../Images/2.jpg") },
+  { id: "3", uri: require("../Images/3.jpg") },
+  { id: "4", uri: require("../Images/4.jpg") },
+  { id: "5", uri: require("../Images/5.jpg") },
 ];
 export default class SwipeCard extends React.Component {
   constructor() {
@@ -45,6 +45,16 @@ export default class SwipeCard extends React.Component {
     this.nopeOpacity = this.position.x.interpolate({
       inputRange: [-SCREEN_WIDTH / 2, 0, SCREEN_WIDTH / 2],
       outputRange: [1, 0, 0],
+      extrapolate: "clamp",
+    });
+    this.nextCardOpacity = this.position.x.interpolate({
+      inputRange: [-SCREEN_WIDTH / 2, 0, SCREEN_WIDTH / 2],
+      outputRange: [1, 0, 1],
+      extrapolate: "clamp",
+    });
+    this.nextCardScale = this.position.x.interpolate({
+      inputRange: [-SCREEN_WIDTH / 2, 0, SCREEN_WIDTH / 2],
+      outputRange: [1, 0.8, 1],
       extrapolate: "clamp",
     });
   }
@@ -131,6 +141,8 @@ export default class SwipeCard extends React.Component {
           <Animated.View
             key={i}
             style={{
+              opacity: this.nextCardOpacity,
+              transform: [{ scale: this.nextCardScale }],
               height: SCREEN_HEIGHT - 120,
               width: SCREEN_WIDTH,
               padding: 10,
@@ -159,7 +171,30 @@ export default class SwipeCard extends React.Component {
       onPanResponderMove: (evt, gestureState) => {
         this.position.setValue({ x: gestureState.dx, y: gestureState.dy });
       },
-      onPanResponderRelease: (evt, gestureState) => {},
+      onPanResponderRelease: (evt, gestureState) => {
+        if (gestureState.dx > 120) {
+          Animated.spring(this.position, {
+            toValue: { x: SCREEN_WIDTH + 100, y: gestureState.dy },
+          }).start(() => {
+            this.setState({ currentIndex: this.state.currentIndex + 1 }, () => {
+              this.position.setValue({ x: 0, y: 0 });
+            });
+          });
+        } else if (gestureState.dx < -120) {
+          Animated.spring(this.position, {
+            toValue: { x: -SCREEN_WIDTH - 100, y: gestureState.dy },
+          }).start(() => {
+            this.setState({ currentIndex: this.state.currentIndex + 1 }, () => {
+              this.position.setValue({ x: 0, y: 0 });
+            });
+          });
+        } else {
+          Animated.spring(this.position, {
+            toValue: { x: 0, y: 0 },
+            friction: 4,
+          }).start();
+        }
+      },
     });
   }
 }
