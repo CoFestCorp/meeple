@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
     fontSize: 25,
   },
   details: {
-    marginLeft: 30,
+    marginLeft: 15,
     marginBottom: 40,
   },
   input: {
@@ -119,6 +119,44 @@ const styles = StyleSheet.create({
     shadowColor: "black",
     shadowOpacity: 0.1,
     left: 15,
+  },
+  signupLogo: {
+    width: 100,
+    height: 97,
+    marginLeft: 140,
+    top: 0,
+  },
+  RegTitle: {
+    color: "#9b4ae6",
+    fontSize: 25,
+    width: 200,
+    height: 30,
+    top: 5,
+    left: -60,
+  },
+
+  RegText: {
+    color: "#9b4ae6",
+    fontSize: 25,
+    fontWeight: "bold",
+    width: 400,
+    height: 45,
+    top: -60,
+    left: -60,
+  },
+
+  RegInfo: {
+    color: "#9b4ae6",
+    fontSize: 16,
+    width: 280,
+    height: 80,
+    top: -65,
+    left: -60,
+    flexWrap: "wrap",
+  },
+  RegBox: {
+    marginHorizontal: 70,
+    marginVertical: 20,
   },
   btm: {
     top: 40,

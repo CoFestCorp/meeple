@@ -15,7 +15,7 @@ function RecoveryCodeScreen({ navigation }) {
 
       <Text style={styles.CodeText}>Recovery code</Text>
       <Text style={styles.CodeInfo}>
-        Please enter the recovery code you recived via email / text.
+        Please enter the recovery code you received via email / text.
       </Text>
 
       <Text style={styles.CodeTitle}>Recovery code</Text>

@@ -18,32 +18,30 @@ function RegisterScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       <Image
-        style={styles.loginLogo}
+        style={styles.signupLogo}
         fadeDuration={1000}
         source={require("../Images/logo_transparent.png")}
       />
       <View style={styles.details}>
-        <TextInput placeholder="  Your Name" style={styles.input} />
+        <TextInput placeholder="Your full name" style={styles.input} />
+        <TextInput placeholder="Choose a username" style={styles.input} />
+        <TextInput placeholder="DOB DD/MM/YYYY" style={styles.input} />
+        <TextInput placeholder="Your email" style={styles.input} />
         <TextInput
-          placeholder="  Your Date of Birth DD/MM/YYYY"
-          style={styles.input}
-        />
-        <TextInput placeholder="  Your email" style={styles.input} />
-        <TextInput
-          placeholder="  Select a Password"
+          placeholder="Select a password"
           style={styles.input}
           secureTextEntry={true}
         />
         <TextInput
-          placeholder="  Confirm Password"
+          placeholder="Confirm password"
           style={styles.input}
           secureTextEntry={true}
         />
         <TouchableOpacity
-          onPress={() => navigation.navigate("UserHome")}
+          onPress={() => navigation.navigate("Verify")}
           style={styles.signup}
         >
-          <Text style={styles.loginT2}>Sign up</Text>
+          <Text style={styles.loginT2}>Submit</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>

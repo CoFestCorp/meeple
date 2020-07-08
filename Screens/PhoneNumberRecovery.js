@@ -16,7 +16,7 @@ function PhoneNumberScreen({ navigation }) {
       <Text style={styles.RecoveryText}>Phone Number Recovery</Text>
       <Text style={styles.PhoneRecInfo}>
         This will require your phone number that was linked with your account,
-        simply enter below to recive a reset code via text.
+        simply enter below to receive a reset code via text.
       </Text>
 
       <Text style={styles.phoneTitle}>Phone number</Text>
