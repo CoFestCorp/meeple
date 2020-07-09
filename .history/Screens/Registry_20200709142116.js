@@ -17,9 +17,7 @@ import styles from "../css";
 function RegisterScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={{ fontSize: 40, right: -140, paddingTop: 40, paddingBottom: 40, fontWeight: "bold", }}>
-        Sign Up
-      </Text>
+      <te
       <View style={styles.details}>
         <TextInput placeholder="  Your full name" style={styles.input} />
         <TextInput placeholder="  Choose a username" style={styles.input} />

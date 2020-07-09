@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     height: 58,
     left: 55,
     top: -20,
-    backgroundColor: '#E5E5E5',
+    backgroundColor: "white",
     borderRadius: 24,
     shadowOffset: { width: 5, height: 5 },
     shadowColor: "black",
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     lineHeight: 25,
     left: 117,
     bottom: -20,
-    
+    b#E5E5E5
     
   },
 
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
     color: "white",
     fontWeight: "bold",
     fontSize: 25,
-   
+    
     
   },
   details: {
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     height: 58,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: '#E5E5E5',
+    backgroundColor: "white",
     borderRadius: 24,
     paddingHorizontal: 10,
     marginBottom: 20,

@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
   container: {
     width: 420,
     height: 1000,
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#E5E5E5",
   },
 
   logo: {
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     height: 58,
     left: 55,
     top: -20,
-    backgroundColor: '#E5E5E5',
+    backgroundColor: "white",
     borderRadius: 24,
     shadowOffset: { width: 5, height: 5 },
     shadowColor: "black",
@@ -58,13 +58,13 @@ const styles = StyleSheet.create({
     height: 58,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: '#7041EE',
+    backgroundColor: "#9b4ae6",
     borderRadius: 24,
     shadowOffset: { width: 5, height: 5 },
     shadowColor: "black",
     shadowOpacity: 0.1,
     margin: 30,
-    left: 25,
+    left: 15,
   },
 
   loginT: {
@@ -74,16 +74,12 @@ const styles = StyleSheet.create({
     lineHeight: 25,
     left: 117,
     bottom: -20,
-    
-    
   },
 
   loginT2: {
     color: "white",
     fontWeight: "bold",
     fontSize: 25,
-   
-    
   },
   details: {
     marginLeft: 15,
@@ -94,11 +90,11 @@ const styles = StyleSheet.create({
     height: 58,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: '#E5E5E5',
+    backgroundColor: "white",
     borderRadius: 24,
     paddingHorizontal: 10,
     marginBottom: 20,
-    left: 35,
+    left: 15,
   },
   loginLogo: {
     width: 175,
@@ -109,7 +105,7 @@ const styles = StyleSheet.create({
   icon: {
     top: -61,
     left: 265,
-    left: 295,
+    left: 275,
     color: "gray",
   },
   signup: {
@@ -117,12 +113,12 @@ const styles = StyleSheet.create({
     height: 58,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#7041EE",
+    backgroundColor: "backgroundColor: "#7041EE",",
     borderRadius: 24,
     shadowOffset: { width: 5, height: 5 },
     shadowColor: "black",
     shadowOpacity: 0.1,
-    left: 35,
+    left: 15,
   },
   signupLogo: {
     width: 100,

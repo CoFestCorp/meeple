@@ -19,8 +19,8 @@ import { MaterialCommunityIcons as Icon } from "@expo/vector-icons";
 function LoginScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={{ fontSize: 40, right: -155, paddingTop: 40, paddingBottom: 100, fontWeight: "bold", }}>
-        Log In
+      <Text style={{ fontSize: 40, right: -140, paddingTop: 40, paddingBottom: 40 }}>
+        Sign Up
       </Text>
       <View style={styles.details}>
         <TextInput placeholder="  Username or email" style={styles.input} />

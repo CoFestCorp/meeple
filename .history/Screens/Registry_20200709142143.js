@@ -17,7 +17,7 @@ import styles from "../css";
 function RegisterScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={{ fontSize: 40, right: -140, paddingTop: 40, paddingBottom: 40, fontWeight: "bold", }}>
+      <Text style={{fon}}>
         Sign Up
       </Text>
       <View style={styles.details}>
