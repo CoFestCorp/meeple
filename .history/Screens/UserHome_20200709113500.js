@@ -6,18 +6,10 @@ import SwipeCard from "../Components/SwipeCards.js";
 
 function UserHomeScreen({ navigation }) {
   return (
-    <SafeAreaView>
+    <SafeAreaView
     <View style={styles.container}>
-        <SwipeCard style={styles.swipe}/>
-    
-      <TouchableOpacity style={styles.Yes}>
-
-    </TouchableOpacity>
-      <TouchableOpacity style={styles.No}>
-
-      </TouchableOpacity>
-      </View>
-    </SafeAreaView>
+      <SwipeCard style={styles.swipe}/>
+    </View>
   );
 }
 

@@ -33,7 +33,7 @@ function NewPasswordScreenScreen({ navigation }) {
 
       <Text style={styles.NewTitle}>New password</Text>
       <TextInput
-        placeholder="  New Password"
+        placeholder="New Password"
         style={styles.CodeInput}
         secureTextEntry={true}
       ></TextInput>
@@ -43,7 +43,7 @@ function NewPasswordScreenScreen({ navigation }) {
 
       <Text style={styles.ConfirmTitle}>Confirm password</Text>
       <TextInput
-        placeholder="  New Password"
+        placeholder="New Password"
         style={styles.CodeInput}
         secureTextEntry={true}
       ></TextInput>

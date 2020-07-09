@@ -404,17 +404,7 @@ const styles = StyleSheet.create({
   },
 
   yes: {
-    width: 305,
-    height: 50,
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "#9b4ae6",
-    borderRadius: 24,
-    shadowOffset: { width: 5, height: 5 },
-    shadowColor: "black",
-    shadowOpacity: 0.1,
-    margin: 30,
-    left: 15,
+    top:10,
   }
 });
 

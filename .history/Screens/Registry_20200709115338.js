@@ -28,12 +28,12 @@ function RegisterScreen({ navigation }) {
         <TextInput placeholder="  DOB DD/MM/YYYY" style={styles.input} />
         <TextInput placeholder="  Your email" style={styles.input} />
         <TextInput
-          placeholder="  Select a password"
+          placeholder="Select a password"
           style={styles.input}
           secureTextEntry={true}
         />
         <TextInput
-          placeholder="  Confirm password"
+          placeholder="Confirm password"
           style={styles.input}
           secureTextEntry={true}
         />

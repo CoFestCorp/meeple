@@ -33,7 +33,7 @@ function RegisterScreen({ navigation }) {
           secureTextEntry={true}
         />
         <TextInput
-          placeholder="  Confirm password"
+          placeholder="Confirm password"
           style={styles.input}
           secureTextEntry={true}
         />

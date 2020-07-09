@@ -20,7 +20,7 @@ function RecoveryCodeScreen({ navigation }) {
 
       <Text style={styles.CodeTitle}>Recovery code</Text>
       <TextInput
-        placeholder="  Recovery code"
+        placeholder="Recovery code"
         style={styles.CodeInput}
       ></TextInput>
 

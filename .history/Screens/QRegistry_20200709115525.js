@@ -33,7 +33,7 @@ function QRegisterScreen({ navigation }) {
       </TouchableOpacity>
 
       <TouchableOpacity
-        onPress={() => navigation.navigate("RecoveryCode")}
+        onPress={() => navigation.navigate("  RecoveryCode")}
         style={styles.RecoverySubmit}
       >
         <Text style={styles.submitText}>Submit</Text>

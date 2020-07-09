@@ -8,7 +8,8 @@ function UserHomeScreen({ navigation }) {
   return (
     <SafeAreaView>
     <View style={styles.container}>
-        <SwipeCard style={styles.swipe}/>
+        <SwipeCard onScroll={(
+          [style={styles.swipe}/>
     
       <TouchableOpacity style={styles.Yes}>
 

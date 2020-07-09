@@ -30,7 +30,7 @@ function VerifyScreen({ navigation }) {
         </Text>
       </View>
 
-      <TextInput placeholder="  Phone number" style={styles.input} />
+      <TextInput placeholder="Phone number" style={styles.input} />
       <TouchableOpacity
         onPress={() => navigation.navigate("VerifyCode")}
         style={styles.signup}

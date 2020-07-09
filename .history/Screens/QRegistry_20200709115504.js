@@ -26,7 +26,7 @@ function QRegisterScreen({ navigation }) {
       ></TextInput>
 
       <TouchableOpacity
-        onPress={() => navigation.navigate("PhoneNumberRecovery")}
+        onPress={() => navigation.navigate("  PhoneNumberRecovery")}
         style={styles.ForgotEmailbtnDesign}
       >
         <Text style={styles.ForgotEmailbtn}>Forgot your Email ?</Text>

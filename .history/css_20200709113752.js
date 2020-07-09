@@ -405,7 +405,7 @@ const styles = StyleSheet.create({
 
   yes: {
     width: 305,
-    height: 50,
+    height: 350,
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#9b4ae6",

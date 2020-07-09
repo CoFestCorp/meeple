@@ -26,14 +26,14 @@ function QRegisterScreen({ navigation }) {
       ></TextInput>
 
       <TouchableOpacity
-        onPress={() => navigation.navigate("PhoneNumberRecovery")}
+        onPress={() => navigation.navigate("  PhoneNumberRecovery")}
         style={styles.ForgotEmailbtnDesign}
       >
         <Text style={styles.ForgotEmailbtn}>Forgot your Email ?</Text>
       </TouchableOpacity>
 
       <TouchableOpacity
-        onPress={() => navigation.navigate("RecoveryCode")}
+        onPress={() => navigation.navigate("  RecoveryCode")}
         style={styles.RecoverySubmit}
       >
         <Text style={styles.submitText}>Submit</Text>
