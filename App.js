@@ -14,6 +14,8 @@ import PhoneNumberScreen from "./Screens/PhoneNumberRecovery";
 import NewPasswordScreenScreen from "./Screens/NewPassword";
 import VerifyScreen from "./Screens/Verify";
 import VerifyCodeScreen from "./Screens/VerifyCode";
+import ChatScreen from "./Screens/ChatScreen";
+import Profile from "./Screens/Profile";
 TouchableOpacity.defaultProps = { activeOpacity: 0.1 };
 
 class Hidden extends React.Component {
@@ -79,6 +81,16 @@ function App() {
           styles={stylesApp.title}
           name="NewPassword"
           component={NewPasswordScreenScreen}
+        />
+        <Stack.Screen
+          styles={stylesApp.title}
+          name="ChatScreen"
+          component={ChatScreen}
+        />
+        <Stack.Screen
+          styles={stylesApp.title}
+          name="Profile"
+          component={Profile}
         />
       </Stack.Navigator>
     </NavigationContainer>
