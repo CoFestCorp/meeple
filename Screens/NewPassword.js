@@ -11,7 +11,7 @@ import {
 import styles from "../css";
 import App from "../App";
 import { MaterialCommunityIcons as Icon } from "@expo/vector-icons";
-
+import PasswordToggleInput from "../Components/PasswordToggleIn.js";
 function One() {
   onPress = () => navigation.navigate("Login");
 }
@@ -32,24 +32,10 @@ function NewPasswordScreenScreen({ navigation }) {
       <Text style={styles.CodeInfo}>Please enter your new password below.</Text>
 
       <Text style={styles.NewTitle}>New password</Text>
-      <TextInput
-        placeholder="  New Password"
-        style={styles.CodeInput}
-        secureTextEntry={true}
-      ></TextInput>
-      <TouchableOpacity style={styles.iconRec1}>
-        <Icon name="eye" size={25} />
-      </TouchableOpacity>
+      <PasswordToggleInput />
 
       <Text style={styles.ConfirmTitle}>Confirm password</Text>
-      <TextInput
-        placeholder="  New Password"
-        style={styles.CodeInput}
-        secureTextEntry={true}
-      ></TextInput>
-      <TouchableOpacity style={styles.iconRec2}>
-        <Icon name="eye" size={25} />
-      </TouchableOpacity>
+      <PasswordToggleInput styles={{ alignItems: "flex-start" }} />
 
       <TouchableOpacity
         onPress={() => {

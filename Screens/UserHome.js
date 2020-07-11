@@ -1,22 +1,35 @@
 import "react-native-gesture-handler";
 import * as React from "react";
-import { View, Text, Button, TouchableOpacity, Image, SafeAreaView } from "react-native";
+import {
+  View,
+  Text,
+  Button,
+  Touchable,
+  Image,
+  SafeAreaView,
+} from "react-native";
 import styles from "../css";
 import SwipeCard from "../Components/SwipeCards.js";
+import Account from "../Components/Account.js";
+import Chat from "../Components/Chat.js";
+import Cards from "../Components/Cards.js";
 
 function UserHomeScreen({ navigation }) {
   return (
-    <SafeAreaView>
-    <View style={styles.container}>
-        <SwipeCard style={styles.swipe}/>
-    
-      <TouchableOpacity style={styles.Yes}>
-
-    </TouchableOpacity>
-      <TouchableOpacity style={styles.No}>
-
-      </TouchableOpacity>
+    <SafeAreaView style={{ flexDirection: "column-reverse" }}>
+      <View
+        style={{
+          flexDirection: "row",
+          height: 570,
+          top: 70,
+          justifyContent: "space-around",
+        }}
+      >
+        <Account />
+        <Cards />
+        <Chat />
       </View>
+      <SwipeCard style={styles.swipe} />
     </SafeAreaView>
   );
 }

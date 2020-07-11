@@ -15,23 +15,24 @@ import {
 } from "react-native";
 import styles from "../css";
 import { MaterialCommunityIcons as Icon } from "@expo/vector-icons";
-
+import PasswordToggleInput from "../Components/PasswordToggleIn.js";
 function LoginScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={{ fontSize: 40, right: -155, paddingTop: 40, paddingBottom: 100, fontWeight: "bold", }}>
+      <Text
+        style={{
+          fontSize: 40,
+          right: -155,
+          paddingTop: 40,
+          paddingBottom: 100,
+          fontWeight: "bold",
+        }}
+      >
         Log In
       </Text>
       <View style={styles.details}>
         <TextInput placeholder="  Username or email" style={styles.input} />
-        <TextInput
-          placeholder="  Password"
-          style={styles.input}
-          secureTextEntry={true}
-        />
-        <TouchableOpacity style={styles.icon}>
-          <Icon name="eye" size={25} />
-        </TouchableOpacity>
+        <PasswordToggleInput />
       </View>
 
       <TouchableOpacity
