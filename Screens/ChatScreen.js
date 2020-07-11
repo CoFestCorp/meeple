@@ -9,7 +9,7 @@ import {
   SafeAreaView,
 } from "react-native";
 import styles from "../css";
-import SwipeCard from "../Components/SwipeCards.js";
+
 import Account from "../Components/Account.js";
 import Chat from "../Components/Chat.js";
 import Cards from "../Components/Cards.js";
