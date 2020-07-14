@@ -4,24 +4,32 @@ import {
   View,
   Text,
   Button,
-  TouchableOpacity,
+  Touchable,
   Image,
   SafeAreaView,
 } from "react-native";
 import styles from "../css";
 import SwipeCard from "../Components/SwipeCards.js";
+import Account from "../Components/Account.js";
+import Chat from "../Components/Chat.js";
+import Cards from "../Components/Cards.js";
 
 function UserHomeScreen({ navigation }) {
   return (
-    <SafeAreaView>
-      <View style={styles.container}>
-        <View style={{ flexDirection: "row" }}></View>
-        <SwipeCard style={styles.swipe} />
-        <View style={{ flexDirection: "row" }}>
-          <TouchableOpacity style={styles.Yes} />
-          <TouchableOpacity style={styles.No} />
-        </View>
+    <SafeAreaView style={{ flexDirection: "column-reverse" }}>
+      <View
+        style={{
+          flexDirection: "row",
+          height: 570,
+          top: 70,
+          justifyContent: "space-around",
+        }}
+      >
+        <Account />
+        <Cards />
+        <Chat />
       </View>
+      <SwipeCard style={styles.swipe} />
     </SafeAreaView>
   );
 }

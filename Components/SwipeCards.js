@@ -7,10 +7,14 @@ import {
   Image,
   Animated,
   PanResponder,
+  TouchableOpacity,
 } from "react-native";
+import styles from "../css";
+import { MaterialCommunityIcons as Icon } from "@expo/vector-icons";
+import { Entypo } from "@expo/vector-icons";
 const SCREEN_HEIGHT = Dimensions.get("window").height;
 const SCREEN_WIDTH = Dimensions.get("window").width;
-const Foods = [
+const Users = [
   { id: "1", uri: require("../Images/1.jpg") },
   { id: "2", uri: require("../Images/2.jpg") },
   { id: "3", uri: require("../Images/3.jpg") },
@@ -59,82 +63,109 @@ export default class SwipeCard extends React.Component {
     });
   }
   render() {
-    return Foods.map((item, i) => {
+    return Users.map((item, i) => {
       if (i < this.state.currentIndex) {
         return null;
       } else if (i == this.state.currentIndex) {
         return (
-          <Animated.View
-            {...this.PanResponder.panHandlers}
-            key={i}
-            style={[
-              this.rotateAndTranslate,
-              {
-                height: SCREEN_HEIGHT - 120,
-                width: SCREEN_WIDTH,
-                padding: 10,
-                position: "absolute",
-              },
-            ]}
-          >
+          <>
             <Animated.View
-              style={{
-                opacity: this.likeOpacity,
+              {...this.PanResponder.panHandlers}
+              key={i}
+              style={[
+                this.rotateAndTranslate,
+                {
+                  height: SCREEN_HEIGHT - 120,
+                  width: SCREEN_WIDTH,
+                  padding: 10,
+                  position: "absolute",
+                },
+              ]}
+            >
+              <Animated.View
+                style={{
+                  opacity: this.likeOpacity,
 
-                transform: [{ rotate: "-30deg" }],
-                position: "absolute",
-                top: 50,
-                left: 40,
-                zIndex: 1000,
-              }}
-            >
-              <Text
-                style={{
-                  borderWidth: 1,
-                  borderColor: "green",
-                  color: "green",
-                  fontSize: 32,
-                  fontWeight: "800",
-                  padding: 10,
+                  transform: [{ rotate: "-30deg" }],
+                  position: "absolute",
+                  top: 50,
+                  left: 40,
+                  zIndex: 1000,
                 }}
               >
-                LIKE
-              </Text>
-            </Animated.View>
-            <Animated.View
-              style={{
-                opacity: this.nopeOpacity,
-                transform: [{ rotate: "30deg" }],
-                position: "absolute",
-                top: 50,
-                right: 40,
-                zIndex: 1000,
-              }}
-            >
-              <Text
+                <Text
+                  style={{
+                    borderWidth: 1,
+                    borderColor: "#22d44b",
+                    color: "#22d44b",
+                    fontSize: 32,
+                    fontWeight: "800",
+                    padding: 10,
+                  }}
+                >
+                  LIKE
+                </Text>
+              </Animated.View>
+              <Animated.View
                 style={{
-                  borderWidth: 1,
-                  borderColor: "red",
-                  color: "red",
-                  fontSize: 32,
-                  fontWeight: "800",
-                  padding: 10,
+                  opacity: this.nopeOpacity,
+                  transform: [{ rotate: "30deg" }],
+                  position: "absolute",
+                  top: 50,
+                  right: 40,
+                  zIndex: 1000,
                 }}
               >
-                NOPE
-              </Text>
+                <Text
+                  style={{
+                    borderWidth: 1,
+                    borderColor: "red",
+                    color: "red",
+                    fontSize: 32,
+                    fontWeight: "800",
+                    padding: 10,
+                  }}
+                >
+                  NOPE
+                </Text>
+              </Animated.View>
+              <Image
+                style={{
+                  flex: 1,
+                  height: null,
+                  width: null,
+                  resizeMode: "cover",
+                  borderRadius: 20,
+                }}
+                source={item.uri}
+              />
             </Animated.View>
-            <Image
-              style={{
-                flex: 1,
-                height: null,
-                width: null,
-                resizeMode: "cover",
-                borderRadius: 20,
-              }}
-              source={item.uri}
-            />
-          </Animated.View>
+            <View style={{ flexDirection: "row" }}>
+              <TouchableOpacity
+                style={{
+                  width: 60,
+                  height: 60,
+
+                  margin: 30,
+                  bottom: -650,
+                  left: 200,
+                }}
+              >
+                <Icon name="heart-circle" size={60} color="#22d44b" />
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={{
+                  width: 60,
+                  height: 60,
+                  margin: 30,
+                  bottom: -650,
+                  left: -100,
+                }}
+              >
+                <Entypo name="circle-with-cross" size={60} color="red" />
+              </TouchableOpacity>
+            </View>
+          </>
         );
       } else {
         return (

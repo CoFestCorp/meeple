@@ -403,31 +403,6 @@ const styles = StyleSheet.create({
     top: 5,
     left: -40,
   },
-
-  Yes: {
-    width: 60,
-    height: 60,
-    backgroundColor: "green",
-    borderRadius: 100,
-    shadowOffset: { width: 5, height: 5 },
-    shadowColor: "black",
-    shadowOpacity: 0.1,
-    margin: 30,
-    bottom: -580,
-    left: 220,
-  },
-  No: {
-    width: 60,
-    height: 60,
-    backgroundColor: "red",
-    borderRadius: 100,
-    shadowOffset: { width: 5, height: 5 },
-    shadowColor: "black",
-    shadowOpacity: 0.1,
-    margin: 30,
-    bottom: -580,
-    left: -100,
-  },
 });
 
 export default styles;
