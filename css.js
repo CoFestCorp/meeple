@@ -88,13 +88,10 @@ const styles = StyleSheet.create({
   input: {
     width: 305,
     height: 58,
-    alignItems: "center",
-    justifyContent: "center",
     backgroundColor: "#E5E5E5",
     borderRadius: 24,
     paddingHorizontal: 10,
     marginBottom: 20,
-    left: 35,
   },
   loginLogo: {
     width: 175,
