@@ -75,7 +75,7 @@ export default class SwipeCard extends React.Component {
               style={[
                 this.rotateAndTranslate,
                 {
-                  height: SCREEN_HEIGHT - 120,
+                  height: "70%",
                   width: SCREEN_WIDTH,
                   padding: 10,
                   position: "absolute",
@@ -140,29 +140,28 @@ export default class SwipeCard extends React.Component {
                 source={item.uri}
               />
             </Animated.View>
-            <View style={{ flexDirection: "row" }}>
+            <View
+              style={{
+                flexDirection: "row",
+                justifyContent: "space-around",
+                marginTop: "10%",
+                zIndex: -1000,
+              }}
+            >
               <TouchableOpacity
                 style={{
-                  width: 60,
-                  height: 60,
-
-                  margin: 30,
-                  bottom: -650,
-                  left: 200,
+                  bottom: "10%",
                 }}
               >
-                <Icon name="heart-circle" size={60} color="#22d44b" />
+                <Entypo name="circle-with-cross" size={70} color="red" />
               </TouchableOpacity>
+
               <TouchableOpacity
                 style={{
-                  width: 60,
-                  height: 60,
-                  margin: 30,
-                  bottom: -650,
-                  left: -100,
+                  bottom: "10%",
                 }}
               >
-                <Entypo name="circle-with-cross" size={60} color="red" />
+                <Icon name="heart-circle" size={70} color="#22d44b" />
               </TouchableOpacity>
             </View>
           </>
@@ -174,7 +173,7 @@ export default class SwipeCard extends React.Component {
             style={{
               opacity: this.nextCardOpacity,
               transform: [{ scale: this.nextCardScale }],
-              height: SCREEN_HEIGHT - 120,
+              height: "70%",
               width: SCREEN_WIDTH,
               padding: 10,
               position: "absolute",
