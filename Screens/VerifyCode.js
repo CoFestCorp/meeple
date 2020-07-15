@@ -10,6 +10,8 @@ import {
   Item,
   Input,
   Logo,
+  Platform,
+  StatusBar,
 } from "react-native";
 import App from "../App";
 import styles from "../css";
@@ -17,7 +19,14 @@ import { Ionicons } from "@expo/vector-icons";
 
 function VerifyCodeScreen({ navigation }) {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: "#FFFFFF" }}>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        backgroundColor: "#FFFFFF",
+        paddingTop:
+          Platform.OS === "android" ? StatusBar.currentHeight + 20 : 0,
+      }}
+    >
       <Image
         style={{ width: 100, height: 97, alignSelf: "center" }}
         fadeDuration={1000}

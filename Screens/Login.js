@@ -12,25 +12,32 @@ import {
   Item,
   Input,
   Logo,
+  Platform,
+  StatusBar,
 } from "react-native";
 import styles from "../css";
 import { MaterialCommunityIcons as Icon } from "@expo/vector-icons";
 import PasswordToggleInput from "../Components/PasswordToggleIn.js";
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons } from "@expo/vector-icons";
 
-
-
-const LoginScreen = ({navigation}) => {
+const LoginScreen = ({ navigation }) => {
   return (
     <SafeAreaView
       style={{
         flex: 1,
         backgroundColor: "#FFFFFF",
         alignItems: "center",
+        paddingTop:
+          Platform.OS === "android" ? StatusBar.currentHeight + 20 : 0,
       }}
     >
       <TouchableOpacity onPress={() => navigation.navigate("Home")}>
-      <Ionicons name="ios-arrow-back" size={30} color="black" style={{right:180, top:15}}/>
+        <Ionicons
+          name="ios-arrow-back"
+          size={30}
+          color="black"
+          style={{ right: 180, top: 15 }}
+        />
       </TouchableOpacity>
       <Text
         style={{
@@ -73,7 +80,6 @@ const LoginScreen = ({navigation}) => {
       </View>
     </SafeAreaView>
   );
-}
-
+};
 
 export default LoginScreen;
