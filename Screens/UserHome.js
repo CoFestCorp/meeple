@@ -54,4 +54,3 @@ class UserHomeScreen extends React.Component {
   }
 }
 export default UserHomeScreen;
-

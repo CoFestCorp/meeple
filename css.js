@@ -1,4 +1,4 @@
- import "react-native-gesture-handler";
+import "react-native-gesture-handler";
 import { StyleSheet } from "react-native";
 
 const stylesApp = StyleSheet.create({
@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#E5E5E5",
     borderRadius: 24,
     paddingHorizontal: 10,
-    marginBottom: 20,
+    marginBottom: "5%",
   },
   loginLogo: {
     width: 175,
@@ -258,15 +258,6 @@ const styles = StyleSheet.create({
     top: -25,
   },
 
-  ForgotEmailbtn: {
-    color: "white",
-    top: 0,
-    left: 0,
-  },
-  ForgotEmailbtnDesign: {
-    top: 45,
-    left: 60,
-  },
   PhoneRecInfo: {
     color: "white",
     fontSize: 16,
