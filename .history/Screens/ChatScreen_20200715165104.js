@@ -1,11 +1,14 @@
+import "react-native-gesture-handler";
 import * as React from "react";
+import SwipeCard from "../Components/SwipeCards.js";
 import Chat from "../Components/Chat.js";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { SafeAreaView, View } from "react-native";
 import Cards from "../Components/Cards.js";
 import Account from "../Components/Account.js";
 
-function Profile({ navigation }) {
+
+function ChatScreen({ navigation }) {
   return (
     <SafeAreaView
       style={{
@@ -38,4 +41,4 @@ function Profile({ navigation }) {
   );
 }
 
-export default Profile;
+export default ChatScreen;

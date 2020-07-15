@@ -1,11 +1,23 @@
+import "react-native-gesture-handler";
 import * as React from "react";
+import {
+  View,
+  Text,
+  Button,
+  Touchable,
+  Image,
+  SafeAreaView,
+  Platform,
+  StatusBar,
+} from "react-native";
+import styles from "../css";
+import SwipeCard from "../Components/SwipeCards.js";
 import Chat from "../Components/Chat.js";
-import { TouchableOpacity } from "react-native-gesture-handler";
-import { SafeAreaView, View } from "react-native";
 import Cards from "../Components/Cards.js";
 import Account from "../Components/Account.js";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
-function Profile({ navigation }) {
+const UserHomeScreen = () => {
   return (
     <SafeAreaView
       style={{
@@ -34,8 +46,10 @@ function Profile({ navigation }) {
           <Chat />
         </TouchableOpacity>
       </View>
+      <SwipeCard style={{ flex: 1 }} />
     </SafeAreaView>
   );
 }
 
-export default Profile;
+export default UserHomeScreen;
+
