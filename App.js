@@ -37,6 +37,7 @@ function App() {
           component={HomeScreen}
         />
         <Stack.Screen
+          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="Login"
           component={LoginScreen}
