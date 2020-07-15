@@ -13,6 +13,8 @@ import styles from "../css";
 import App from "../App";
 import { MaterialCommunityIcons as Icon } from "@expo/vector-icons";
 import PasswordToggleInput from "../Components/PasswordToggleIn.js";
+import { Ionicons } from "@expo/vector-icons";
+
 function One() {
   onPress = () => navigation.navigate("Login");
 }

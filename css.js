@@ -169,13 +169,13 @@ const styles = StyleSheet.create({
 
   //changes made below
   QRegScreen: {
-    backgroundColor: "#52307c",
+    backgroundColor: "#FFFFFF",
     flex: 1,
     alignItems: "center",
   },
 
   RecoveryText: {
-    color: "white",
+    color: "black",
     fontSize: 25,
     fontWeight: "bold",
     width: 400,
@@ -185,7 +185,7 @@ const styles = StyleSheet.create({
   },
 
   RecoveryInfo: {
-    color: "white",
+    color: "black",
     fontSize: 16,
     width: 240,
     height: 45,
@@ -203,19 +203,19 @@ const styles = StyleSheet.create({
   },
 
   EmailTitle: {
-    color: "white",
+    color: "black",
     fontSize: 25,
-    width: 160,
-    height: 30,
+    width: 305,
+    height: 58,
     top: 50,
-    left: -75,
+    left: -5,
   },
 
   EmailInput: {
     width: 305,
     height: 58,
-    backgroundColor: "white",
-    top: 60,
+    backgroundColor: "#E5E5E5",
+    top: 30,
     right: 25,
     borderRadius: 24,
     paddingHorizontal: 10,
@@ -223,7 +223,7 @@ const styles = StyleSheet.create({
   },
 
   PhoneInput: {
-    backgroundColor: "white",
+    backgroundColor: "black",
     width: 250,
     height: 40,
     top: 45,
@@ -233,8 +233,8 @@ const styles = StyleSheet.create({
   RecoverySubmit: {
     width: 300,
     height: 40,
-    backgroundColor: "white",
-    top: 220,
+    backgroundColor: "#7041EE",
+    top: 190,
     left: 0,
     borderRadius: 24,
     shadowOffset: { width: 5, height: 5 },
@@ -244,7 +244,7 @@ const styles = StyleSheet.create({
 
   submitText: {
     textAlign: "center",
-    color: "black",
+    color: "white",
     fontWeight: "bold",
     fontSize: 25,
     lineHeight: 25,
@@ -254,12 +254,10 @@ const styles = StyleSheet.create({
   Recoverylogo: {
     width: 175,
     height: 172,
-    left: -140,
-    top: -25,
   },
 
   PhoneRecInfo: {
-    color: "white",
+    color: "black",
     fontSize: 16,
     width: 340,
     height: 85,
@@ -268,7 +266,7 @@ const styles = StyleSheet.create({
   },
 
   phoneTitle: {
-    color: "white",
+    color: "black",
     fontSize: 25,
     width: 200,
     height: 30,
@@ -279,7 +277,7 @@ const styles = StyleSheet.create({
   PhoneInput: {
     width: 305,
     height: 58,
-    backgroundColor: "white",
+    backgroundColor: "#E5E5E5",
     top: 15,
     right: 25,
     borderRadius: 24,
@@ -290,7 +288,7 @@ const styles = StyleSheet.create({
   RecoverySubmit2: {
     width: 300,
     height: 40,
-    backgroundColor: "white",
+    backgroundColor: "#7041EE",
     top: 200,
     left: 0,
     borderRadius: 24,
@@ -301,7 +299,7 @@ const styles = StyleSheet.create({
 
   submitText2: {
     textAlign: "center",
-    color: "black",
+    color: "white",
     fontWeight: "bold",
     fontSize: 25,
     lineHeight: 25,
@@ -309,7 +307,7 @@ const styles = StyleSheet.create({
   },
 
   CodeTitle: {
-    color: "white",
+    color: "black",
     fontSize: 25,
     width: 200,
     height: 30,
@@ -320,7 +318,7 @@ const styles = StyleSheet.create({
   CodeInput: {
     width: 305,
     height: 58,
-    backgroundColor: "white",
+    backgroundColor: "#E5E5E5",
     top: 15,
     right: 25,
     borderRadius: 24,
@@ -329,7 +327,7 @@ const styles = StyleSheet.create({
   },
 
   CodeText: {
-    color: "white",
+    color: "black",
     fontSize: 25,
     fontWeight: "bold",
     width: 400,
@@ -339,7 +337,7 @@ const styles = StyleSheet.create({
   },
 
   CodeInfo: {
-    color: "white",
+    color: "black",
     fontSize: 16,
     width: 280,
     height: 45,
@@ -349,7 +347,7 @@ const styles = StyleSheet.create({
   RecoverySubmit3: {
     width: 300,
     height: 40,
-    backgroundColor: "white",
+    backgroundColor: "#7041EE",
     top: 70,
     left: 0,
     borderRadius: 24,
@@ -360,7 +358,7 @@ const styles = StyleSheet.create({
 
   submitText3: {
     textAlign: "center",
-    color: "black",
+    color: "white",
     fontWeight: "bold",
     fontSize: 25,
     lineHeight: 25,
@@ -376,20 +374,23 @@ const styles = StyleSheet.create({
   },
 
   NewTitle: {
-    color: "white",
+    color: "black",
     fontSize: 25,
     width: 200,
     height: 30,
     top: 5,
-    left: -60,
+    left: -40,
   },
   ConfirmTitle: {
-    color: "white",
+    color: "black",
     fontSize: 25,
     width: 250,
     height: 30,
     top: 5,
-    left: -40,
+    left: -20,
+  },
+  NewPasswordInput: {
+    top: 100,
   },
 });
 

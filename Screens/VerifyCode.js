@@ -13,6 +13,7 @@ import {
 } from "react-native";
 import App from "../App";
 import styles from "../css";
+import { Ionicons } from "@expo/vector-icons";
 
 function VerifyCodeScreen({ navigation }) {
   return (
@@ -22,6 +23,14 @@ function VerifyCodeScreen({ navigation }) {
         fadeDuration={1000}
         source={require("../Images/logo_transparent.png")}
       />
+      <TouchableOpacity onPress={() => navigation.navigate("Verify")}>
+        <Ionicons
+          name="ios-arrow-back"
+          size={30}
+          color="black"
+          style={{ top: -130, left: 15 }}
+        />
+      </TouchableOpacity>
       <View style={{ flex: 1, paddingHorizontal: "2%" }}>
         <Text
           style={{

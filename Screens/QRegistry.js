@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import styles from "../css";
 import App from "../App";
-import { withOrientation } from "react-navigation";
+import { Ionicons } from "@expo/vector-icons";
 
 //changes made this this function
 function QRegisterScreen({ navigation }) {
@@ -21,6 +21,15 @@ function QRegisterScreen({ navigation }) {
         fadeDuration={1000}
         source={require("../Images/logo_transparent.png")}
       />
+      <TouchableOpacity onPress={() => navigation.navigate("Home")}>
+        <Ionicons
+          name="ios-arrow-back"
+          size={30}
+          color="black"
+          style={{ right: 180, top: -130 }}
+        />
+      </TouchableOpacity>
+
       <View style={{ flex: 1, paddingHorizontal: "2%" }}>
         <Text
           style={{

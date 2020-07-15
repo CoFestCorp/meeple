@@ -13,6 +13,7 @@ import {
 } from "react-native";
 import App from "../App";
 import styles from "../css";
+import { Ionicons } from '@expo/vector-icons';
 
 function RegisterScreen({ navigation }) {
   return (
@@ -24,6 +25,9 @@ function RegisterScreen({ navigation }) {
         backgroundColor: "#FFFFFF",
       }}
     >
+      <TouchableOpacity onPress={() => navigation.navigate("Home")}>
+        <Ionicons name="ios-arrow-back" size={30} color="black" style={{ right: 180, top: 15 }} />
+      </TouchableOpacity>
       <Text
         style={{
           fontSize: 40,

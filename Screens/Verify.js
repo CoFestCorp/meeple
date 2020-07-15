@@ -13,6 +13,7 @@ import {
 } from "react-native";
 import App from "../App";
 import styles from "../css";
+import { Ionicons } from "@expo/vector-icons";
 
 function VerifyScreen({ navigation }) {
   return (

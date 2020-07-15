@@ -16,10 +16,10 @@ import Chat from "../Components/Chat.js";
 import Cards from "../Components/Cards.js";
 import Account from "../Components/Account.js";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import { NavigationContainer } from "@react-navigation/native";
 import { render } from "react-dom";
 
-class UserHomeScreen extends React.Component {
-  render() {
+const UserHomeScreen = ({navigation}) => { 
     return (
       <SafeAreaView
         style={{
@@ -31,6 +31,7 @@ class UserHomeScreen extends React.Component {
             Platform.OS === "android" ? StatusBar.currentHeight + 20 : 0,
         }}
       >
+        
         <View
           style={{
             flex: 2,
@@ -52,5 +53,5 @@ class UserHomeScreen extends React.Component {
       </SafeAreaView>
     );
   }
-}
+
 export default UserHomeScreen;
