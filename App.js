@@ -16,8 +16,6 @@ import VerifyScreen from "./Screens/Verify";
 import VerifyCodeScreen from "./Screens/VerifyCode";
 import ChatScreen from "./Screens/ChatScreen";
 import Profile from "./Screens/Profile";
-
-
 TouchableOpacity.defaultProps = { activeOpacity: 0.1 };
 
 class Hidden extends React.Component {
@@ -28,8 +26,7 @@ class Hidden extends React.Component {
 
 const Stack = createStackNavigator();
 
-class App extends React.Component {
-  render (){
+function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -41,7 +38,7 @@ class App extends React.Component {
         />
         <Stack.Screen
           options={{ headerShown: false }}
-          styles={stylesApp.title}
+          styles={stylesApp.title} s
           name="Login"
           component={LoginScreen}
         />
@@ -108,7 +105,6 @@ class App extends React.Component {
       </Stack.Navigator>
     </NavigationContainer>
   );
-}
 }
 
 export default App;

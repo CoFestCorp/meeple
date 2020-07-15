@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#E5E5E5",
     borderRadius: 24,
     paddingHorizontal: 10,
-    marginBottom: 20,
+    marginBottom: "5%",
   },
   loginLogo: {
     width: 175,
@@ -254,18 +254,8 @@ const styles = StyleSheet.create({
   Recoverylogo: {
     width: 175,
     height: 172,
-
   },
 
-  ForgotEmailbtn: {
-    color: "black",
-    top: 0,
-    left: 0,
-  },
-  ForgotEmailbtnDesign: {
-    top: 15,
-    left: 60,
-  },
   PhoneRecInfo: {
     color: "black",
     fontSize: 16,
