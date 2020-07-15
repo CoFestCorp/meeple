@@ -75,7 +75,7 @@ export default class SwipeCard extends React.Component {
               style={[
                 this.rotateAndTranslate,
                 {
-                  height: "70%",
+                  height: "75%",
                   width: SCREEN_WIDTH,
                   padding: 10,
                   position: "absolute",
@@ -150,7 +150,7 @@ export default class SwipeCard extends React.Component {
             >
               <TouchableOpacity
                 style={{
-                  bottom: "10%",
+                  bottom: "5%",
                 }}
               >
                 <Entypo name="circle-with-cross" size={70} color="red" />
@@ -158,7 +158,7 @@ export default class SwipeCard extends React.Component {
 
               <TouchableOpacity
                 style={{
-                  bottom: "10%",
+                  bottom: "5%",
                 }}
               >
                 <Icon name="heart-circle" size={70} color="#22d44b" />
@@ -173,7 +173,7 @@ export default class SwipeCard extends React.Component {
             style={{
               opacity: this.nextCardOpacity,
               transform: [{ scale: this.nextCardScale }],
-              height: "70%",
+              height: "75%",
               width: SCREEN_WIDTH,
               padding: 10,
               position: "absolute",

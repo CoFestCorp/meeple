@@ -10,10 +10,12 @@ import {
   Item,
   Input,
   Logo,
+  Platform,
+  StatusBar,
 } from "react-native";
 import App from "../App";
 import styles from "../css";
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons } from "@expo/vector-icons";
 
 function RegisterScreen({ navigation }) {
   return (
@@ -23,10 +25,17 @@ function RegisterScreen({ navigation }) {
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#FFFFFF",
+        paddingTop:
+          Platform.OS === "android" ? StatusBar.currentHeight + 20 : 0,
       }}
     >
       <TouchableOpacity onPress={() => navigation.navigate("Home")}>
-        <Ionicons name="ios-arrow-back" size={30} color="black" style={{ right: 180, top: 15 }} />
+        <Ionicons
+          name="ios-arrow-back"
+          size={30}
+          color="black"
+          style={{ right: 180, top: 15 }}
+        />
       </TouchableOpacity>
       <Text
         style={{
@@ -56,17 +65,13 @@ function RegisterScreen({ navigation }) {
         <TouchableOpacity
           onPress={() => navigation.navigate("Verify")}
           style={{
-            flex: 2,
             width: 305,
             height: 58,
-            bottom: "1.5%",
+            bottom: "1%",
             alignItems: "center",
             justifyContent: "center",
             backgroundColor: "#7041EE",
             borderRadius: 24,
-            shadowOffset: { width: 5, height: 5 },
-            shadowColor: "black",
-            shadowOpacity: 0.1,
           }}
         >
           <Text style={styles.loginT2}>Submit</Text>
