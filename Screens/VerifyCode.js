@@ -13,7 +13,10 @@ import {
 } from "react-native";
 import App from "../App";
 import styles from "../css";
+<<<<<<< HEAD
 import { Ionicons } from "@expo/vector-icons";
+=======
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
 
 function VerifyCodeScreen({ navigation }) {
   return (
@@ -23,6 +26,7 @@ function VerifyCodeScreen({ navigation }) {
         fadeDuration={1000}
         source={require("../Images/logo_transparent.png")}
       />
+<<<<<<< HEAD
       <TouchableOpacity onPress={() => navigation.navigate("Verify")}>
         <Ionicons
           name="ios-arrow-back"
@@ -43,6 +47,11 @@ function VerifyCodeScreen({ navigation }) {
           Verification code
         </Text>
         <Text style={{ color: "#9b4ae6", fontSize: 16, marginBottom: "15%" }}>
+=======
+      <View style={styles.RegBox}>
+        <Text style={styles.RegText}>Verification code</Text>
+        <Text style={styles.RegInfo}>
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
           Please enter the verification code you received via text.
         </Text>
 

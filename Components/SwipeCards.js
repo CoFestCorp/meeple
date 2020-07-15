@@ -75,7 +75,11 @@ export default class SwipeCard extends React.Component {
               style={[
                 this.rotateAndTranslate,
                 {
+<<<<<<< HEAD
                   height: "75%",
+=======
+                  height: SCREEN_HEIGHT - 120,
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
                   width: SCREEN_WIDTH,
                   padding: 10,
                   position: "absolute",
@@ -140,28 +144,37 @@ export default class SwipeCard extends React.Component {
                 source={item.uri}
               />
             </Animated.View>
-            <View
-              style={{
-                flexDirection: "row",
-                justifyContent: "space-around",
-                marginTop: "10%",
-                zIndex: -1000,
-              }}
-            >
+            <View style={{ flexDirection: "row" }}>
               <TouchableOpacity
                 style={{
+<<<<<<< HEAD
                   bottom: "5%",
-                }}
-              >
-                <Entypo name="circle-with-cross" size={70} color="red" />
-              </TouchableOpacity>
+=======
+                  width: 60,
+                  height: 60,
 
-              <TouchableOpacity
-                style={{
-                  bottom: "5%",
+                  margin: 30,
+                  bottom: -650,
+                  left: 200,
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
                 }}
               >
-                <Icon name="heart-circle" size={70} color="#22d44b" />
+                <Icon name="heart-circle" size={60} color="#22d44b" />
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={{
+<<<<<<< HEAD
+                  bottom: "5%",
+=======
+                  width: 60,
+                  height: 60,
+                  margin: 30,
+                  bottom: -650,
+                  left: -100,
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
+                }}
+              >
+                <Entypo name="circle-with-cross" size={60} color="red" />
               </TouchableOpacity>
             </View>
           </>
@@ -173,7 +186,11 @@ export default class SwipeCard extends React.Component {
             style={{
               opacity: this.nextCardOpacity,
               transform: [{ scale: this.nextCardScale }],
+<<<<<<< HEAD
               height: "75%",
+=======
+              height: SCREEN_HEIGHT - 120,
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
               width: SCREEN_WIDTH,
               padding: 10,
               position: "absolute",

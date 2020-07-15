@@ -25,9 +25,15 @@ function UserHomeScreen({ navigation }) {
           justifyContent: "space-around",
         }}
       >
+<<<<<<< HEAD
         <Account style={{ width: 30, height: 30 }} />
         <Cards style={{ width: 30, height: 30 }} />
         <Chat style={{ width: 30, height: 30 }} />
+=======
+        <Account />
+        <Cards />
+        <Chat />
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
       </View>
       <SwipeCard style={styles.swipe} />
     </SafeAreaView>

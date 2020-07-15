@@ -13,7 +13,10 @@ import {
 } from "react-native";
 import App from "../App";
 import styles from "../css";
+<<<<<<< HEAD
 import { Ionicons } from "@expo/vector-icons";
+=======
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
 
 function VerifyScreen({ navigation }) {
   return (
@@ -23,6 +26,7 @@ function VerifyScreen({ navigation }) {
         fadeDuration={1000}
         source={require("../Images/logo_transparent.png")}
       />
+<<<<<<< HEAD
 
       <View style={{ flex: 1, paddingHorizontal: "2%" }}>
         <Text
@@ -36,6 +40,11 @@ function VerifyScreen({ navigation }) {
           You're just one step away!
         </Text>
         <Text style={{ color: "#9b4ae6", fontSize: 16, marginBottom: "15%" }}>
+=======
+      <View style={styles.RegBox}>
+        <Text style={styles.RegText}>You're just one step away!</Text>
+        <Text style={styles.RegInfo}>
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
           To verify your identity, plese enter your phone number. We will
           shortly send you a text message with a verification code.
         </Text>

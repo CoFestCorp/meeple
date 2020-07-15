@@ -88,10 +88,17 @@ const styles = StyleSheet.create({
   input: {
     width: 305,
     height: 58,
+    alignItems: "center",
+    justifyContent: "center",
     backgroundColor: "#E5E5E5",
     borderRadius: 24,
     paddingHorizontal: 10,
+<<<<<<< HEAD
     marginBottom: "5%",
+=======
+    marginBottom: 20,
+    left: 35,
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
   },
   loginLogo: {
     width: 175,
@@ -169,13 +176,13 @@ const styles = StyleSheet.create({
 
   //changes made below
   QRegScreen: {
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#52307c",
     flex: 1,
     alignItems: "center",
   },
 
   RecoveryText: {
-    color: "black",
+    color: "white",
     fontSize: 25,
     fontWeight: "bold",
     width: 400,
@@ -185,7 +192,7 @@ const styles = StyleSheet.create({
   },
 
   RecoveryInfo: {
-    color: "black",
+    color: "white",
     fontSize: 16,
     width: 240,
     height: 45,
@@ -203,19 +210,19 @@ const styles = StyleSheet.create({
   },
 
   EmailTitle: {
-    color: "black",
+    color: "white",
     fontSize: 25,
-    width: 305,
-    height: 58,
+    width: 160,
+    height: 30,
     top: 50,
-    left: -5,
+    left: -75,
   },
 
   EmailInput: {
     width: 305,
     height: 58,
-    backgroundColor: "#E5E5E5",
-    top: 30,
+    backgroundColor: "white",
+    top: 60,
     right: 25,
     borderRadius: 24,
     paddingHorizontal: 10,
@@ -223,7 +230,7 @@ const styles = StyleSheet.create({
   },
 
   PhoneInput: {
-    backgroundColor: "black",
+    backgroundColor: "white",
     width: 250,
     height: 40,
     top: 45,
@@ -233,8 +240,8 @@ const styles = StyleSheet.create({
   RecoverySubmit: {
     width: 300,
     height: 40,
-    backgroundColor: "#7041EE",
-    top: 190,
+    backgroundColor: "white",
+    top: 220,
     left: 0,
     borderRadius: 24,
     shadowOffset: { width: 5, height: 5 },
@@ -244,7 +251,7 @@ const styles = StyleSheet.create({
 
   submitText: {
     textAlign: "center",
-    color: "white",
+    color: "black",
     fontWeight: "bold",
     fontSize: 25,
     lineHeight: 25,
@@ -254,10 +261,26 @@ const styles = StyleSheet.create({
   Recoverylogo: {
     width: 175,
     height: 172,
+<<<<<<< HEAD
   },
 
+=======
+    left: -140,
+    top: -25,
+  },
+
+  ForgotEmailbtn: {
+    color: "white",
+    top: 0,
+    left: 0,
+  },
+  ForgotEmailbtnDesign: {
+    top: 45,
+    left: 60,
+  },
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
   PhoneRecInfo: {
-    color: "black",
+    color: "white",
     fontSize: 16,
     width: 340,
     height: 85,
@@ -266,7 +289,7 @@ const styles = StyleSheet.create({
   },
 
   phoneTitle: {
-    color: "black",
+    color: "white",
     fontSize: 25,
     width: 200,
     height: 30,
@@ -277,7 +300,7 @@ const styles = StyleSheet.create({
   PhoneInput: {
     width: 305,
     height: 58,
-    backgroundColor: "#E5E5E5",
+    backgroundColor: "white",
     top: 15,
     right: 25,
     borderRadius: 24,
@@ -288,7 +311,7 @@ const styles = StyleSheet.create({
   RecoverySubmit2: {
     width: 300,
     height: 40,
-    backgroundColor: "#7041EE",
+    backgroundColor: "white",
     top: 200,
     left: 0,
     borderRadius: 24,
@@ -299,7 +322,7 @@ const styles = StyleSheet.create({
 
   submitText2: {
     textAlign: "center",
-    color: "white",
+    color: "black",
     fontWeight: "bold",
     fontSize: 25,
     lineHeight: 25,
@@ -307,7 +330,7 @@ const styles = StyleSheet.create({
   },
 
   CodeTitle: {
-    color: "black",
+    color: "white",
     fontSize: 25,
     width: 200,
     height: 30,
@@ -318,7 +341,7 @@ const styles = StyleSheet.create({
   CodeInput: {
     width: 305,
     height: 58,
-    backgroundColor: "#E5E5E5",
+    backgroundColor: "white",
     top: 15,
     right: 25,
     borderRadius: 24,
@@ -327,7 +350,7 @@ const styles = StyleSheet.create({
   },
 
   CodeText: {
-    color: "black",
+    color: "white",
     fontSize: 25,
     fontWeight: "bold",
     width: 400,
@@ -337,7 +360,7 @@ const styles = StyleSheet.create({
   },
 
   CodeInfo: {
-    color: "black",
+    color: "white",
     fontSize: 16,
     width: 280,
     height: 45,
@@ -347,7 +370,7 @@ const styles = StyleSheet.create({
   RecoverySubmit3: {
     width: 300,
     height: 40,
-    backgroundColor: "#7041EE",
+    backgroundColor: "white",
     top: 70,
     left: 0,
     borderRadius: 24,
@@ -358,7 +381,7 @@ const styles = StyleSheet.create({
 
   submitText3: {
     textAlign: "center",
-    color: "white",
+    color: "black",
     fontWeight: "bold",
     fontSize: 25,
     lineHeight: 25,
@@ -374,23 +397,20 @@ const styles = StyleSheet.create({
   },
 
   NewTitle: {
-    color: "black",
+    color: "white",
     fontSize: 25,
     width: 200,
     height: 30,
     top: 5,
-    left: -40,
+    left: -60,
   },
   ConfirmTitle: {
-    color: "black",
+    color: "white",
     fontSize: 25,
     width: 250,
     height: 30,
     top: 5,
-    left: -20,
-  },
-  NewPasswordInput: {
-    top: 100,
+    left: -40,
   },
 });
 

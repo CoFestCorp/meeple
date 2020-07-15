@@ -13,8 +13,11 @@ import styles from "../css";
 import App from "../App";
 import { MaterialCommunityIcons as Icon } from "@expo/vector-icons";
 import PasswordToggleInput from "../Components/PasswordToggleIn.js";
+<<<<<<< HEAD
 import { Ionicons } from "@expo/vector-icons";
 
+=======
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
 function One() {
   onPress = () => navigation.navigate("Login");
 }
@@ -24,6 +27,7 @@ function two() {
 
 function NewPasswordScreenScreen({ navigation }) {
   return (
+<<<<<<< HEAD
     <SafeAreaView style={{ backgroundColor: "#52307c", flex: 1 }}>
       <View style={{ flex: 1, paddingHorizontal: "2%" }}>
         <Text
@@ -40,6 +44,17 @@ function NewPasswordScreenScreen({ navigation }) {
         <Text style={{ color: "white", fontSize: 16, marginBottom: "15%" }}>
           Please enter your new password below.
         </Text>
+=======
+    <View style={styles.QRegScreen}>
+      <Image
+        style={styles.Recoverylogo}
+        fadeDuration={1000}
+        source={require("../Images/logo_transparent.png")}
+      />
+
+      <Text style={styles.CodeText}>Password reset</Text>
+      <Text style={styles.CodeInfo}>Please enter your new password below.</Text>
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
 
         <Text style={{ color: "white", fontSize: 15 }}>New password</Text>
         <PasswordToggleInput />

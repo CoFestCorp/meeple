@@ -10,7 +10,10 @@ import {
 } from "react-native";
 import styles from "../css";
 import App from "../App";
+<<<<<<< HEAD
 import { Ionicons } from "@expo/vector-icons";
+=======
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
 
 //changes made this this function
 function QRegisterScreen({ navigation }) {
@@ -21,6 +24,7 @@ function QRegisterScreen({ navigation }) {
         fadeDuration={1000}
         source={require("../Images/logo_transparent.png")}
       />
+<<<<<<< HEAD
       <TouchableOpacity onPress={() => navigation.navigate("Home")}>
         <Ionicons
           name="ios-arrow-back"
@@ -29,6 +33,13 @@ function QRegisterScreen({ navigation }) {
           style={{ right: 180, top: -130 }}
         />
       </TouchableOpacity>
+=======
+
+      <Text style={styles.RecoveryText}>Forgot your password ?</Text>
+      <Text style={styles.RecoveryInfo}>
+        Don't worry type your email here and we'll recover it for you.
+      </Text>
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
 
       <View style={{ flex: 1, paddingHorizontal: "2%" }}>
         <Text

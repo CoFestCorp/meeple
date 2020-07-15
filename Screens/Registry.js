@@ -13,32 +13,14 @@ import {
 } from "react-native";
 import App from "../App";
 import styles from "../css";
-import { Ionicons } from '@expo/vector-icons';
 
 function RegisterScreen({ navigation }) {
   return (
-    <SafeAreaView
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#FFFFFF",
-      }}
-    >
-      <TouchableOpacity onPress={() => navigation.navigate("Home")}>
-        <Ionicons name="ios-arrow-back" size={30} color="black" style={{ right: 180, top: 15 }} />
-      </TouchableOpacity>
-      <Text
-        style={{
-          fontSize: 40,
-          paddingVertical: "10%",
-
-          fontWeight: "bold",
-        }}
-      >
+    <SafeAreaView style={styles.container}>
+      <Text style={{ fontSize: 40, right: -140, paddingTop: 40, paddingBottom: 40, fontWeight: "bold", }}>
         Sign Up
       </Text>
-      <View style={{ flex: 1 }}>
+      <View style={styles.details}>
         <TextInput placeholder="  Your full name" style={styles.input} />
         <TextInput placeholder="  Choose a username" style={styles.input} />
         <TextInput placeholder="  DOB DD/MM/YYYY" style={styles.input} />
@@ -55,6 +37,7 @@ function RegisterScreen({ navigation }) {
         />
         <TouchableOpacity
           onPress={() => navigation.navigate("Verify")}
+<<<<<<< HEAD
           style={{
             width: 305,
             height: 58,
@@ -64,6 +47,9 @@ function RegisterScreen({ navigation }) {
             backgroundColor: "#7041EE",
             borderRadius: 24,
           }}
+=======
+          style={styles.signup}
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
         >
           <Text style={styles.loginT2}>Submit</Text>
         </TouchableOpacity>

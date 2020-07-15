@@ -10,7 +10,10 @@ import {
 } from "react-native";
 import styles from "../css";
 import App from "../App";
+<<<<<<< HEAD
 import { Ionicons } from "@expo/vector-icons";
+=======
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
 
 function RecoveryCodeScreen({ navigation }) {
   return (
@@ -20,6 +23,7 @@ function RecoveryCodeScreen({ navigation }) {
         fadeDuration={1000}
         source={require("../Images/logo_transparent.png")}
       />
+<<<<<<< HEAD
       <View style={{ flex: 1, paddingHorizontal: "2%" }}>
         <Text
           style={{
@@ -34,6 +38,13 @@ function RecoveryCodeScreen({ navigation }) {
         <Text style={{ color: "white", fontSize: 16, marginBottom: "15%" }}>
           Please enter the recovery code you received via email / text.
         </Text>
+=======
+
+      <Text style={styles.CodeText}>Recovery code</Text>
+      <Text style={styles.CodeInfo}>
+        Please enter the recovery code you received via email / text.
+      </Text>
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
 
         <TextInput
           placeholder="  Recovery code"
