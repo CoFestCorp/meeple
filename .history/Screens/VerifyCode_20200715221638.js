@@ -23,7 +23,7 @@ function VerifyCodeScreen({ navigation }) {
         fadeDuration={1000}
         source={require("../Images/logo_transparent.png")}
       />
-        <TouchableOpacity onPress={() => navigation.navigate("Verify")}>
+        <TouchableOpacity onPress={() => navigation.navigate("Home")}>
           <Ionicons name="ios-arrow-back" size={30} color="black" style={{ top: -130, left: 15 }} />
         </TouchableOpacity>
       <View style={styles.RegBox}>

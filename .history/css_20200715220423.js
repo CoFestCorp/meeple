@@ -254,7 +254,8 @@ const styles = StyleSheet.create({
   Recoverylogo: {
     width: 175,
     height: 172,
-
+    left: 10,
+    top: -25,
   },
 
   ForgotEmailbtn: {

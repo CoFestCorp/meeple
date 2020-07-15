@@ -15,7 +15,7 @@ import App from "../App";
 import styles from "../css";
 import { Ionicons } from '@expo/vector-icons';
 
-function VerifyCodeScreen({ navigation }) {
+function VerifyScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       <Image
@@ -23,24 +23,26 @@ function VerifyCodeScreen({ navigation }) {
         fadeDuration={1000}
         source={require("../Images/logo_transparent.png")}
       />
-        <TouchableOpacity onPress={() => navigation.navigate("Verify")}>
-          <Ionicons name="ios-arrow-back" size={30} color="black" style={{ top: -130, left: 15 }} />
-        </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate("Home")}>
+        <Ionicons name="ios-arrow-back" size={30} color="black"  />
+      </TouchableOpacity>
       <View style={styles.RegBox}>
-        <Text style={styles.RegText}>Verification code</Text>
+        <Text style={styles.RegText}>You're just one step away!</Text>
         <Text style={styles.RegInfo}>
-          Please enter the verification code you received via text.
+          To verify your identity, plese enter your phone number. We will
+          shortly send you a text message with a verification code.
         </Text>
       </View>
-      <TextInput placeholder="Verification code" style={styles.input} />
+
+      <TextInput placeholder="  Phone number" style={styles.input} />
       <TouchableOpacity
-        onPress={() => navigation.navigate("UserHome")}
+        onPress={() => navigation.navigate("VerifyCode")}
         style={styles.signup}
       >
-        <Text style={styles.loginT2}>Submit</Text>
+        <Text style={styles.loginT2}>Send Code</Text>
       </TouchableOpacity>
     </SafeAreaView>
   );
 }
 
-export default VerifyCodeScreen;
+export default VerifyScreen;

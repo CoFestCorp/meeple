@@ -13,8 +13,8 @@ function RecoveryCodeScreen({ navigation }) {
         fadeDuration={1000}
         source={require("../Images/logo_transparent.png")}
       />
-      <TouchableOpacity onPress={() => navigation.navigate("QRegister")}>
-        <Ionicons name="ios-arrow-back" size={30} color="black" style={{ right: 180, top:-130}} />
+      <TouchableOpacity onPress={() => navigation.navigate("Home")}>
+        <Ionicons name="ios-arrow-back" size={30} color="black" style={{ right: 180,}} />
       </TouchableOpacity>
       <Text style={styles.CodeText}>Recovery code</Text>
       <Text style={styles.CodeInfo}>

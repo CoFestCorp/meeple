@@ -3,6 +3,7 @@ import * as React from "react";
 import { Image, View, Text, TextInput, TouchableOpacity } from "react-native";
 import styles from "../css";
 import App from "../App";
+import { Ionicons } from '@expo/vector-icons';
 
 function PhoneNumberScreen({ navigation }) {
   return (
