@@ -36,7 +36,7 @@ function HomeScreen({ navigation }) {
             height: 58,
             backgroundColor: "#7041EE",
             borderRadius: 24,
-            bottom: 10,
+            bottom: 10
           }}
         >
           <Text
@@ -60,6 +60,9 @@ function HomeScreen({ navigation }) {
             height: 58,
             backgroundColor: "#E5E5E5",
             borderRadius: 24,
+            shadowOffset: { width: 5, height: 5 },
+            shadowColor: "black",
+            shadowOpacity: 0.1,
           }}
         >
           <Text style={styles.loginT}>Log in</Text>

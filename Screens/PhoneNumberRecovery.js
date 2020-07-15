@@ -7,22 +7,13 @@ import {
   TextInput,
   TouchableOpacity,
   SafeAreaView,
-  Platform,
-  StatusBar,
 } from "react-native";
 import styles from "../css";
 import App from "../App";
 
 function PhoneNumberScreen({ navigation }) {
   return (
-    <SafeAreaView
-      style={{
-        backgroundColor: "#52307c",
-        flex: 1,
-        paddingTop:
-          Platform.OS === "android" ? StatusBar.currentHeight + 20 : 0,
-      }}
-    >
+    <SafeAreaView style={{ backgroundColor: "#52307c", flex: 1 }}>
       <Image
         style={{ width: 100, height: 97, alignSelf: "center" }}
         fadeDuration={1000}

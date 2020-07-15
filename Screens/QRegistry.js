@@ -7,35 +7,29 @@ import {
   TextInput,
   TouchableOpacity,
   SafeAreaView,
-  Platform,
-  Dimensions,
-  StatusBar,
 } from "react-native";
 import styles from "../css";
 import App from "../App";
 import { Ionicons } from "@expo/vector-icons";
 
-const SCREEN_HEIGHT = Dimensions.get("screen").height;
-const SCREEN_WIDTH = Dimensions.get("window").width;
 //changes made this this function
 function QRegisterScreen({ navigation }) {
   return (
-    <SafeAreaView
-      style={{
-        backgroundColor: "#52307c",
-        flex: 1,
-        paddingTop:
-          Platform.OS === "android" ? StatusBar.currentHeight + 20 : 0,
-      }}
-    >
+    <SafeAreaView style={{ backgroundColor: "#52307c", flex: 1 }}>
       <Image
         style={{ width: 100, height: 97, alignSelf: "center" }}
         fadeDuration={1000}
         source={require("../Images/logo_transparent.png")}
       />
       <TouchableOpacity onPress={() => navigation.navigate("Home")}>
-        <Ionicons name="ios-arrow-back" size={30} color="white" />
+        <Ionicons
+          name="ios-arrow-back"
+          size={30}
+          color="black"
+          style={{ right: 180, top: -130 }}
+        />
       </TouchableOpacity>
+
       <View style={{ flex: 1, paddingHorizontal: "2%" }}>
         <Text
           style={{
