@@ -13,11 +13,37 @@ import {
 } from "react-native";
 import App from "../App";
 import styles from "../css";
+<<<<<<< HEAD
 
 function RegisterScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       <Text style={{ fontSize: 40, right: -140, paddingTop: 40, paddingBottom: 40, fontWeight: "bold", }}>
+=======
+import { Ionicons } from '@expo/vector-icons';
+
+function RegisterScreen({ navigation }) {
+  return (
+    <SafeAreaView
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#FFFFFF",
+      }}
+    >
+      <TouchableOpacity onPress={() => navigation.navigate("Home")}>
+        <Ionicons name="ios-arrow-back" size={30} color="black" style={{ right: 180, top: 15 }} />
+      </TouchableOpacity>
+      <Text
+        style={{
+          fontSize: 40,
+          paddingVertical: "10%",
+
+          fontWeight: "bold",
+        }}
+      >
+>>>>>>> parent of 9fb1ffbf... resized with platform
         Sign Up
       </Text>
       <View style={styles.details}>

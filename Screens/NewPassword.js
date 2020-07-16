@@ -28,6 +28,9 @@ function two() {
 function NewPasswordScreenScreen({ navigation }) {
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 9fb1ffbf... resized with platform
     <SafeAreaView style={{ backgroundColor: "#52307c", flex: 1 }}>
       <View style={{ flex: 1, paddingHorizontal: "2%" }}>
         <Text

@@ -16,9 +16,28 @@ import {
 import styles from "../css";
 import { MaterialCommunityIcons as Icon } from "@expo/vector-icons";
 import PasswordToggleInput from "../Components/PasswordToggleIn.js";
+<<<<<<< HEAD
 function LoginScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
+=======
+import { Ionicons } from '@expo/vector-icons';
+
+
+
+const LoginScreen = ({navigation}) => {
+  return (
+    <SafeAreaView
+      style={{
+        flex: 1,
+        backgroundColor: "#FFFFFF",
+        alignItems: "center",
+      }}
+    >
+      <TouchableOpacity onPress={() => navigation.navigate("Home")}>
+      <Ionicons name="ios-arrow-back" size={30} color="black" style={{right:180, top:15}}/>
+      </TouchableOpacity>
+>>>>>>> parent of 9fb1ffbf... resized with platform
       <Text
         style={{
           fontSize: 40,
@@ -44,5 +63,9 @@ function LoginScreen({ navigation }) {
     </SafeAreaView>
   );
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 9fb1ffbf... resized with platform
 
 export default LoginScreen;

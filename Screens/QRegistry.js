@@ -33,6 +33,7 @@ function QRegisterScreen({ navigation }) {
           style={{ right: 180, top: -130 }}
         />
       </TouchableOpacity>
+<<<<<<< HEAD
 =======
 
       <Text style={styles.RecoveryText}>Forgot your password ?</Text>
@@ -40,6 +41,8 @@ function QRegisterScreen({ navigation }) {
         Don't worry type your email here and we'll recover it for you.
       </Text>
 >>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
+=======
+>>>>>>> parent of 9fb1ffbf... resized with platform
 
       <View style={{ flex: 1, paddingHorizontal: "2%" }}>
         <Text
