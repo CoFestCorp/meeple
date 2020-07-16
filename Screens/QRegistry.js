@@ -7,35 +7,43 @@ import {
   TextInput,
   TouchableOpacity,
   SafeAreaView,
-  Platform,
-  Dimensions,
-  StatusBar,
 } from "react-native";
 import styles from "../css";
 import App from "../App";
+<<<<<<< HEAD
 import { Ionicons } from "@expo/vector-icons";
+=======
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
 
-const SCREEN_HEIGHT = Dimensions.get("screen").height;
-const SCREEN_WIDTH = Dimensions.get("window").width;
 //changes made this this function
 function QRegisterScreen({ navigation }) {
   return (
-    <SafeAreaView
-      style={{
-        backgroundColor: "#52307c",
-        flex: 1,
-        paddingTop:
-          Platform.OS === "android" ? StatusBar.currentHeight + 20 : 0,
-      }}
-    >
+    <SafeAreaView style={{ backgroundColor: "#52307c", flex: 1 }}>
       <Image
         style={{ width: 100, height: 97, alignSelf: "center" }}
         fadeDuration={1000}
         source={require("../Images/logo_transparent.png")}
       />
+<<<<<<< HEAD
       <TouchableOpacity onPress={() => navigation.navigate("Home")}>
-        <Ionicons name="ios-arrow-back" size={30} color="white" />
+        <Ionicons
+          name="ios-arrow-back"
+          size={30}
+          color="black"
+          style={{ right: 180, top: -130 }}
+        />
       </TouchableOpacity>
+<<<<<<< HEAD
+=======
+
+      <Text style={styles.RecoveryText}>Forgot your password ?</Text>
+      <Text style={styles.RecoveryInfo}>
+        Don't worry type your email here and we'll recover it for you.
+      </Text>
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
+=======
+>>>>>>> parent of 9fb1ffbf... resized with platform
+
       <View style={{ flex: 1, paddingHorizontal: "2%" }}>
         <Text
           style={{

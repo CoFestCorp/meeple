@@ -16,8 +16,6 @@ import VerifyScreen from "./Screens/Verify";
 import VerifyCodeScreen from "./Screens/VerifyCode";
 import ChatScreen from "./Screens/ChatScreen";
 import Profile from "./Screens/Profile";
-
-
 TouchableOpacity.defaultProps = { activeOpacity: 0.1 };
 
 class Hidden extends React.Component {
@@ -28,8 +26,7 @@ class Hidden extends React.Component {
 
 const Stack = createStackNavigator();
 
-class App extends React.Component {
-  render (){
+function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -41,30 +38,26 @@ class App extends React.Component {
         />
         <Stack.Screen
           options={{ headerShown: false }}
-          styles={stylesApp.title}
+          styles={stylesApp.title} s
           name="Login"
           component={LoginScreen}
         />
         <Stack.Screen
-          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="QRegister"
           component={QRegisterScreen}
         />
         <Stack.Screen
-          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="Register"
           component={RegisterScreen}
         />
         <Stack.Screen
-          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="Verify"
           component={VerifyScreen}
         />
         <Stack.Screen
-          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="VerifyCode"
           component={VerifyCodeScreen}
@@ -76,31 +69,26 @@ class App extends React.Component {
           component={UserHomeScreen}
         />
         <Stack.Screen
-          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="RecoveryCode"
           component={RecoveryCodeScreen}
         />
         <Stack.Screen
-          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="PhoneNumberRecovery"
           component={PhoneNumberScreen}
         />
         <Stack.Screen
-          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="NewPassword"
           component={NewPasswordScreenScreen}
         />
         <Stack.Screen
-          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="ChatScreen"
           component={ChatScreen}
         />
         <Stack.Screen
-          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="Profile"
           component={Profile}
@@ -108,7 +96,6 @@ class App extends React.Component {
       </Stack.Navigator>
     </NavigationContainer>
   );
-}
 }
 
 export default App;

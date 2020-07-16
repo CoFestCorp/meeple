@@ -7,27 +7,19 @@ import {
   TextInput,
   TouchableOpacity,
   SafeAreaView,
-  Platform,
-  StatusBar,
 } from "react-native";
 import styles from "../css";
 import App from "../App";
 
 function PhoneNumberScreen({ navigation }) {
   return (
-    <SafeAreaView
-      style={{
-        backgroundColor: "#52307c",
-        flex: 1,
-        paddingTop:
-          Platform.OS === "android" ? StatusBar.currentHeight + 20 : 0,
-      }}
-    >
+    <SafeAreaView style={{ backgroundColor: "#52307c", flex: 1 }}>
       <Image
         style={{ width: 100, height: 97, alignSelf: "center" }}
         fadeDuration={1000}
         source={require("../Images/logo_transparent.png")}
       />
+<<<<<<< HEAD
       <View style={{ flex: 1, paddingHorizontal: "2%" }}>
         <Text
           style={{
@@ -43,6 +35,14 @@ function PhoneNumberScreen({ navigation }) {
           This will require your phone number that was linked with your account,
           simply enter below to receive a reset code via text.
         </Text>
+=======
+
+      <Text style={styles.RecoveryText}>Phone Number Recovery</Text>
+      <Text style={styles.PhoneRecInfo}>
+        This will require your phone number that was linked with your account,
+        simply enter below to receive a reset code via text.
+      </Text>
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
 
         <TextInput
           placeholder="Phone number"

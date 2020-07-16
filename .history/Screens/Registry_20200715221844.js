@@ -13,13 +13,6 @@ import {
 } from "react-native";
 import App from "../App";
 import styles from "../css";
-<<<<<<< HEAD
-
-function RegisterScreen({ navigation }) {
-  return (
-    <SafeAreaView style={styles.container}>
-      <Text style={{ fontSize: 40, right: -140, paddingTop: 40, paddingBottom: 40, fontWeight: "bold", }}>
-=======
 import { Ionicons } from '@expo/vector-icons';
 
 function RegisterScreen({ navigation }) {
@@ -43,10 +36,9 @@ function RegisterScreen({ navigation }) {
           fontWeight: "bold",
         }}
       >
->>>>>>> parent of 9fb1ffbf... resized with platform
         Sign Up
       </Text>
-      <View style={styles.details}>
+      <View style={{ flex: 1 }}>
         <TextInput placeholder="  Your full name" style={styles.input} />
         <TextInput placeholder="  Choose a username" style={styles.input} />
         <TextInput placeholder="  DOB DD/MM/YYYY" style={styles.input} />
@@ -63,19 +55,19 @@ function RegisterScreen({ navigation }) {
         />
         <TouchableOpacity
           onPress={() => navigation.navigate("Verify")}
-<<<<<<< HEAD
           style={{
+            flex: 2,
             width: 305,
-            height: 58,
-            bottom: "1%",
+            height: 38,
+            bottom: "1.5%",
             alignItems: "center",
             justifyContent: "center",
             backgroundColor: "#7041EE",
             borderRadius: 24,
+            shadowOffset: { width: 5, height: 5 },
+            shadowColor: "black",
+            shadowOpacity: 0.1,
           }}
-=======
-          style={styles.signup}
->>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
         >
           <Text style={styles.loginT2}>Submit</Text>
         </TouchableOpacity>

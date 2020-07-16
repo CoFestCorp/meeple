@@ -12,74 +12,60 @@ import {
   Item,
   Input,
   Logo,
-  Platform,
-  StatusBar,
 } from "react-native";
 import styles from "../css";
 import { MaterialCommunityIcons as Icon } from "@expo/vector-icons";
 import PasswordToggleInput from "../Components/PasswordToggleIn.js";
-import { Ionicons } from "@expo/vector-icons";
+<<<<<<< HEAD
+function LoginScreen({ navigation }) {
+  return (
+    <SafeAreaView style={styles.container}>
+=======
+import { Ionicons } from '@expo/vector-icons';
 
-const LoginScreen = ({ navigation }) => {
+
+
+const LoginScreen = ({navigation}) => {
   return (
     <SafeAreaView
       style={{
         flex: 1,
         backgroundColor: "#FFFFFF",
         alignItems: "center",
-        paddingTop:
-          Platform.OS === "android" ? StatusBar.currentHeight + 20 : 0,
       }}
     >
       <TouchableOpacity onPress={() => navigation.navigate("Home")}>
-        <Ionicons
-          name="ios-arrow-back"
-          size={30}
-          color="black"
-          style={{ right: 180, top: 15 }}
-        />
+      <Ionicons name="ios-arrow-back" size={30} color="black" style={{right:180, top:15}}/>
       </TouchableOpacity>
+>>>>>>> parent of 9fb1ffbf... resized with platform
       <Text
         style={{
           fontSize: 40,
-          flex: 2,
-          paddingTop: "10%",
+          right: -155,
+          paddingTop: 40,
+          paddingBottom: 100,
           fontWeight: "bold",
         }}
       >
         Log In
       </Text>
-      <View style={{ flex: 2 }}>
-        <TextInput
-          placeholder=" Username or email"
-          style={{
-            width: 305,
-            height: 58,
-            backgroundColor: "#E5E5E5",
-            borderRadius: 24,
-            paddingHorizontal: "2%",
-          }}
-        />
+      <View style={styles.details}>
+        <TextInput placeholder="  Username or email" style={styles.input} />
         <PasswordToggleInput />
       </View>
-      <View style={{ flex: 3 }}>
-        <TouchableOpacity
-          onPress={() => navigation.navigate("UserHome")}
-          style={{
-            width: 305,
-            height: 58,
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: "#7041EE",
-            borderRadius: 24,
-            marginVertical: "30%",
-          }}
-        >
-          <Text style={styles.loginT2}>Log in</Text>
-        </TouchableOpacity>
-      </View>
+
+      <TouchableOpacity
+        onPress={() => navigation.navigate("UserHome")}
+        style={styles.login3}
+      >
+        <Text style={styles.loginT2}>Log in</Text>
+      </TouchableOpacity>
     </SafeAreaView>
   );
-};
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 9fb1ffbf... resized with platform
 
 export default LoginScreen;

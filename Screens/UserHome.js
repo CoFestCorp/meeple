@@ -7,51 +7,37 @@ import {
   Touchable,
   Image,
   SafeAreaView,
-  Platform,
-  StatusBar,
 } from "react-native";
 import styles from "../css";
 import SwipeCard from "../Components/SwipeCards.js";
+import Account from "../Components/Account.js";
 import Chat from "../Components/Chat.js";
 import Cards from "../Components/Cards.js";
-import Account from "../Components/Account.js";
-import { TouchableOpacity } from "react-native-gesture-handler";
-import { NavigationContainer } from "@react-navigation/native";
-import { render } from "react-dom";
 
-const UserHomeScreen = ({navigation}) => { 
-    return (
-      <SafeAreaView
+function UserHomeScreen({ navigation }) {
+  return (
+    <SafeAreaView style={{ flexDirection: "column-reverse" }}>
+      <View
         style={{
-          flex: 1,
-          flexDirection: "column",
-          justifyContent: "center",
-          //It checks the OS, if it's android it takes the height of the statusBar + 20, else 0.
-          paddingTop:
-            Platform.OS === "android" ? StatusBar.currentHeight + 20 : 0,
+          flexDirection: "row",
+          height: 570,
+          top: 70,
+          justifyContent: "space-around",
         }}
       >
-        
-        <View
-          style={{
-            flex: 2,
-            flexDirection: "row",
-            justifyContent: "space-around",
-          }}
-        >
-          <TouchableOpacity onPress={() => navigation.navigate("Profile")}>
-            <Account />
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate("UserHome")}>
-            <Cards />
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate("ChatScreen")}>
-            <Chat />
-          </TouchableOpacity>
-        </View>
-        <SwipeCard style={{ flex: 1 }} />
-      </SafeAreaView>
-    );
-  }
+<<<<<<< HEAD
+        <Account style={{ width: 30, height: 30 }} />
+        <Cards style={{ width: 30, height: 30 }} />
+        <Chat style={{ width: 30, height: 30 }} />
+=======
+        <Account />
+        <Cards />
+        <Chat />
+>>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
+      </View>
+      <SwipeCard style={styles.swipe} />
+    </SafeAreaView>
+  );
+}
 
 export default UserHomeScreen;
