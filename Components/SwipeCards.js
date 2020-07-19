@@ -68,116 +68,77 @@ export default class SwipeCard extends React.Component {
         return null;
       } else if (i == this.state.currentIndex) {
         return (
-          <>
+          <Animated.View
+            {...this.PanResponder.panHandlers}
+            key={i}
+            style={[
+              this.rotateAndTranslate,
+              {
+                height: "100%",
+                width: SCREEN_WIDTH,
+                padding: 10,
+                position: "absolute",
+              },
+            ]}
+          >
             <Animated.View
-              {...this.PanResponder.panHandlers}
-              key={i}
-              style={[
-                this.rotateAndTranslate,
-                {
-<<<<<<< HEAD
-                  height: "75%",
-=======
-                  height: SCREEN_HEIGHT - 120,
->>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
-                  width: SCREEN_WIDTH,
-                  padding: 10,
-                  position: "absolute",
-                },
-              ]}
+              style={{
+                opacity: this.likeOpacity,
+
+                transform: [{ rotate: "-30deg" }],
+                position: "absolute",
+                top: 50,
+                left: 40,
+                zIndex: 1000,
+              }}
             >
-              <Animated.View
+              <Text
                 style={{
-                  opacity: this.likeOpacity,
-
-                  transform: [{ rotate: "-30deg" }],
-                  position: "absolute",
-                  top: 50,
-                  left: 40,
-                  zIndex: 1000,
+                  borderWidth: 1,
+                  borderColor: "#22d44b",
+                  color: "#22d44b",
+                  fontSize: 32,
+                  fontWeight: "800",
+                  padding: 10,
                 }}
               >
-                <Text
-                  style={{
-                    borderWidth: 1,
-                    borderColor: "#22d44b",
-                    color: "#22d44b",
-                    fontSize: 32,
-                    fontWeight: "800",
-                    padding: 10,
-                  }}
-                >
-                  LIKE
-                </Text>
-              </Animated.View>
-              <Animated.View
-                style={{
-                  opacity: this.nopeOpacity,
-                  transform: [{ rotate: "30deg" }],
-                  position: "absolute",
-                  top: 50,
-                  right: 40,
-                  zIndex: 1000,
-                }}
-              >
-                <Text
-                  style={{
-                    borderWidth: 1,
-                    borderColor: "red",
-                    color: "red",
-                    fontSize: 32,
-                    fontWeight: "800",
-                    padding: 10,
-                  }}
-                >
-                  NOPE
-                </Text>
-              </Animated.View>
-              <Image
-                style={{
-                  flex: 1,
-                  height: null,
-                  width: null,
-                  resizeMode: "cover",
-                  borderRadius: 20,
-                }}
-                source={item.uri}
-              />
+                LIKE
+              </Text>
             </Animated.View>
-            <View style={{ flexDirection: "row" }}>
-              <TouchableOpacity
+            <Animated.View
+              style={{
+                opacity: this.nopeOpacity,
+                transform: [{ rotate: "30deg" }],
+                position: "absolute",
+                top: 50,
+                right: 40,
+                zIndex: 1000,
+              }}
+            >
+              <Text
                 style={{
-<<<<<<< HEAD
-                  bottom: "5%",
-=======
-                  width: 60,
-                  height: 60,
-
-                  margin: 30,
-                  bottom: -650,
-                  left: 200,
->>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
+                  borderWidth: 1,
+                  borderColor: "red",
+                  color: "red",
+                  fontSize: 32,
+                  fontWeight: "800",
+                  padding: 10,
                 }}
               >
-                <Icon name="heart-circle" size={60} color="#22d44b" />
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={{
-<<<<<<< HEAD
-                  bottom: "5%",
-=======
-                  width: 60,
-                  height: 60,
-                  margin: 30,
-                  bottom: -650,
-                  left: -100,
->>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
-                }}
-              >
-                <Entypo name="circle-with-cross" size={60} color="red" />
-              </TouchableOpacity>
-            </View>
-          </>
+                NOPE
+              </Text>
+            </Animated.View>
+            <Image
+              style={{
+                flex: 1,
+                height: null,
+                width: null,
+                resizeMode: "cover",
+                borderRadius: 20,
+              }}
+              source={item.uri}
+            />
+          </Animated.View>
         );
       } else {
         return (
@@ -186,11 +147,7 @@ export default class SwipeCard extends React.Component {
             style={{
               opacity: this.nextCardOpacity,
               transform: [{ scale: this.nextCardScale }],
-<<<<<<< HEAD
-              height: "75%",
-=======
-              height: SCREEN_HEIGHT - 120,
->>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
+              height: "100%",
               width: SCREEN_WIDTH,
               padding: 10,
               position: "absolute",

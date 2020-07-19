@@ -10,31 +10,29 @@ import {
   Item,
   Input,
   Logo,
+  Platform,
+  StatusBar,
 } from "react-native";
 import App from "../App";
 import styles from "../css";
-<<<<<<< HEAD
 import { Ionicons } from "@expo/vector-icons";
-=======
->>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
 
 function VerifyCodeScreen({ navigation }) {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: "#FFFFFF" }}>
+    <SafeAreaView
+      style={{
+        flex: 1,
+        backgroundColor: "#FFFFFF",
+        paddingTop:
+          Platform.OS === "android" ? StatusBar.currentHeight + 20 : 0,
+      }}
+    >
       <Image
-        style={{ width: 100, height: 97, alignSelf: "center" }}
+        style={{ width: "20%", height: "15%", alignSelf: "center" }}
         fadeDuration={1000}
         source={require("../Images/logo_transparent.png")}
       />
-<<<<<<< HEAD
-      <TouchableOpacity onPress={() => navigation.navigate("Verify")}>
-        <Ionicons
-          name="ios-arrow-back"
-          size={30}
-          color="black"
-          style={{ top: -130, left: 15 }}
-        />
-      </TouchableOpacity>
+
       <View style={{ flex: 1, paddingHorizontal: "2%" }}>
         <Text
           style={{
@@ -47,15 +45,19 @@ function VerifyCodeScreen({ navigation }) {
           Verification code
         </Text>
         <Text style={{ color: "#9b4ae6", fontSize: 16, marginBottom: "15%" }}>
-=======
-      <View style={styles.RegBox}>
-        <Text style={styles.RegText}>Verification code</Text>
-        <Text style={styles.RegInfo}>
->>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
           Please enter the verification code you received via text.
         </Text>
 
-        <TextInput placeholder="Verification code" style={styles.input} />
+        <TextInput
+          placeholder="Verification code"
+          style={{
+            paddingVertical: "3.5%",
+            paddingRight: "50%",
+            textAlignVertical: "center",
+            backgroundColor: "#E5E5E5",
+            borderRadius: 24,
+          }}
+        />
         <TouchableOpacity
           onPress={() => navigation.navigate("UserHome")}
           style={{

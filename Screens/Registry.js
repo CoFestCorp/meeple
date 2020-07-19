@@ -10,43 +10,28 @@ import {
   Item,
   Input,
   Logo,
+  Platform,
+  StatusBar,
+  StyleSheet,
 } from "react-native";
 import App from "../App";
-import styles from "../css";
-<<<<<<< HEAD
+
+import { Ionicons } from "@expo/vector-icons";
 
 function RegisterScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={{ fontSize: 40, right: -140, paddingTop: 40, paddingBottom: 40, fontWeight: "bold", }}>
-=======
-import { Ionicons } from '@expo/vector-icons';
-
-function RegisterScreen({ navigation }) {
-  return (
-    <SafeAreaView
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#FFFFFF",
-      }}
-    >
-      <TouchableOpacity onPress={() => navigation.navigate("Home")}>
-        <Ionicons name="ios-arrow-back" size={30} color="black" style={{ right: 180, top: 15 }} />
-      </TouchableOpacity>
       <Text
         style={{
           fontSize: 40,
-          paddingVertical: "10%",
-
+          height: "15%",
+          paddingVertical: "5%",
           fontWeight: "bold",
         }}
       >
->>>>>>> parent of 9fb1ffbf... resized with platform
         Sign Up
       </Text>
-      <View style={styles.details}>
+      <View style={{ height: "85%", justifyContent: "space-evenly" }}>
         <TextInput placeholder="  Your full name" style={styles.input} />
         <TextInput placeholder="  Choose a username" style={styles.input} />
         <TextInput placeholder="  DOB DD/MM/YYYY" style={styles.input} />
@@ -63,25 +48,39 @@ function RegisterScreen({ navigation }) {
         />
         <TouchableOpacity
           onPress={() => navigation.navigate("Verify")}
-<<<<<<< HEAD
-          style={{
-            width: 305,
-            height: 58,
-            bottom: "1%",
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: "#7041EE",
-            borderRadius: 24,
-          }}
-=======
-          style={styles.signup}
->>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
+          style={styles.button}
         >
-          <Text style={styles.loginT2}>Submit</Text>
+          <Text style={{ color: "white", fontWeight: "bold", fontSize: 25 }}>
+            Submit
+          </Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    backgroundColor: "#FFFFFF",
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight + 20 : 0,
+  },
+  input: {
+    paddingVertical: "3.5%",
+    paddingRight: "50%",
+    textAlignVertical: "center",
+    backgroundColor: "#E5E5E5",
+    borderRadius: 24,
+  },
+  button: {
+    paddingVertical: "3.5%",
+    paddingHorizontal: "30%",
+    textAlign: "center",
+    textAlignVertical: "center",
+    backgroundColor: "#7041EE",
+    borderRadius: 24,
+  },
+});
 
 export default RegisterScreen;

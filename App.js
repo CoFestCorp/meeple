@@ -38,26 +38,31 @@ function App() {
         />
         <Stack.Screen
           options={{ headerShown: false }}
-          styles={stylesApp.title} s
+          styles={stylesApp.title}
+          s
           name="Login"
           component={LoginScreen}
         />
         <Stack.Screen
+          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="QRegister"
           component={QRegisterScreen}
         />
         <Stack.Screen
+          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="Register"
           component={RegisterScreen}
         />
         <Stack.Screen
+          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="Verify"
           component={VerifyScreen}
         />
         <Stack.Screen
+          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="VerifyCode"
           component={VerifyCodeScreen}
@@ -69,26 +74,31 @@ function App() {
           component={UserHomeScreen}
         />
         <Stack.Screen
+          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="RecoveryCode"
           component={RecoveryCodeScreen}
         />
         <Stack.Screen
+          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="PhoneNumberRecovery"
           component={PhoneNumberScreen}
         />
         <Stack.Screen
+          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="NewPassword"
           component={NewPasswordScreenScreen}
         />
         <Stack.Screen
+          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="ChatScreen"
           component={ChatScreen}
         />
         <Stack.Screen
+          options={{ headerShown: false }}
           styles={stylesApp.title}
           name="Profile"
           component={Profile}

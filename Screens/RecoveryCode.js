@@ -7,24 +7,29 @@ import {
   TextInput,
   TouchableOpacity,
   SafeAreaView,
+  Platform,
+  StatusBar,
 } from "react-native";
 import styles from "../css";
 import App from "../App";
-<<<<<<< HEAD
 import { Ionicons } from "@expo/vector-icons";
-=======
->>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
 
 function RecoveryCodeScreen({ navigation }) {
   return (
-    <SafeAreaView style={{ backgroundColor: "#52307c", flex: 1 }}>
+    <SafeAreaView
+      style={{
+        backgroundColor: "#52307c",
+        flex: 1,
+        paddingTop:
+          Platform.OS === "android" ? StatusBar.currentHeight + 20 : 0,
+      }}
+    >
       <Image
-        style={{ width: 100, height: 97, alignSelf: "center" }}
+        style={{ width: "20%", height: "15%", alignSelf: "center" }}
         fadeDuration={1000}
         source={require("../Images/logo_transparent.png")}
       />
-<<<<<<< HEAD
-      <View style={{ flex: 1, paddingHorizontal: "2%" }}>
+      <View style={{ height: "70%", paddingHorizontal: "2%" }}>
         <Text
           style={{
             color: "white",
@@ -38,13 +43,6 @@ function RecoveryCodeScreen({ navigation }) {
         <Text style={{ color: "white", fontSize: 16, marginBottom: "15%" }}>
           Please enter the recovery code you received via email / text.
         </Text>
-=======
-
-      <Text style={styles.CodeText}>Recovery code</Text>
-      <Text style={styles.CodeInfo}>
-        Please enter the recovery code you received via email / text.
-      </Text>
->>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
 
         <TextInput
           placeholder="  Recovery code"
@@ -57,7 +55,8 @@ function RecoveryCodeScreen({ navigation }) {
             marginBottom: "5%",
           }}
         />
-
+      </View>
+      <View style={{ height: "15%" }}>
         <TouchableOpacity
           onPress={() => navigation.navigate("NewPassword")}
           style={{
@@ -66,7 +65,6 @@ function RecoveryCodeScreen({ navigation }) {
             backgroundColor: "white",
             borderRadius: 24,
             alignSelf: "center",
-            marginTop: "65%",
           }}
         >
           <Text

@@ -19,14 +19,26 @@ export default class PasswordToggleInput extends React.Component {
   };
   render() {
     return (
-      <View>
+      <View
+        style={{
+          flexDirection: "row",
+          paddingVertical: "3.5%",
+          backgroundColor: "#E5E5E5",
+          borderRadius: 24,
+        }}
+      >
         <TextInput
           {...this.props}
           placeholder="  Password"
-          style={styles.input}
+          style={{
+            flex: 1,
+          }}
           secureTextEntry={this.state.secureTextEntry}
         />
-        <TouchableOpacity onPress={this.onIconPress} style={styles.icon}>
+        <TouchableOpacity
+          onPress={this.onIconPress}
+          style={{ paddingRight: "4%" }}
+        >
           <Icon name={this.state.iconName} size={25} />
         </TouchableOpacity>
       </View>

@@ -86,19 +86,11 @@ const styles = StyleSheet.create({
     marginBottom: 40,
   },
   input: {
-    width: 305,
-    height: 58,
-    alignItems: "center",
-    justifyContent: "center",
+    paddingVertical: "3.5%",
+
+    textAlignVertical: "center",
     backgroundColor: "#E5E5E5",
     borderRadius: 24,
-    paddingHorizontal: 10,
-<<<<<<< HEAD
-    marginBottom: "5%",
-=======
-    marginBottom: 20,
-    left: 35,
->>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
   },
   loginLogo: {
     width: 175,
@@ -106,12 +98,7 @@ const styles = StyleSheet.create({
     marginLeft: 120,
     top: -25,
   },
-  icon: {
-    top: -61,
-    left: 265,
-    left: 295,
-    color: "gray",
-  },
+
   signup: {
     width: 305,
     height: 58,
@@ -261,24 +248,8 @@ const styles = StyleSheet.create({
   Recoverylogo: {
     width: 175,
     height: 172,
-<<<<<<< HEAD
   },
 
-=======
-    left: -140,
-    top: -25,
-  },
-
-  ForgotEmailbtn: {
-    color: "white",
-    top: 0,
-    left: 0,
-  },
-  ForgotEmailbtnDesign: {
-    top: 45,
-    left: 60,
-  },
->>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
   PhoneRecInfo: {
     color: "white",
     fontSize: 16,

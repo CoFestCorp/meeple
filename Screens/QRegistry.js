@@ -7,44 +7,28 @@ import {
   TextInput,
   TouchableOpacity,
   SafeAreaView,
+  Platform,
+  Dimensions,
+  StatusBar,
+  StyleSheet,
 } from "react-native";
-import styles from "../css";
-import App from "../App";
-<<<<<<< HEAD
-import { Ionicons } from "@expo/vector-icons";
-=======
->>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
 
+import App from "../App";
+import { Ionicons } from "@expo/vector-icons";
+
+const SCREEN_HEIGHT = Dimensions.get("screen").height;
+const SCREEN_WIDTH = Dimensions.get("window").width;
 //changes made this this function
 function QRegisterScreen({ navigation }) {
   return (
-    <SafeAreaView style={{ backgroundColor: "#52307c", flex: 1 }}>
+    <SafeAreaView style={styles.container}>
       <Image
-        style={{ width: 100, height: 97, alignSelf: "center" }}
+        style={{ width: "20%", height: "15%", alignSelf: "center" }}
         fadeDuration={1000}
         source={require("../Images/logo_transparent.png")}
       />
-<<<<<<< HEAD
-      <TouchableOpacity onPress={() => navigation.navigate("Home")}>
-        <Ionicons
-          name="ios-arrow-back"
-          size={30}
-          color="black"
-          style={{ right: 180, top: -130 }}
-        />
-      </TouchableOpacity>
-<<<<<<< HEAD
-=======
 
-      <Text style={styles.RecoveryText}>Forgot your password ?</Text>
-      <Text style={styles.RecoveryInfo}>
-        Don't worry type your email here and we'll recover it for you.
-      </Text>
->>>>>>> parent of d3cf729f... Merge branch 'master' of https://github.com/CoFestCorp/meeple
-=======
->>>>>>> parent of 9fb1ffbf... resized with platform
-
-      <View style={{ flex: 1, paddingHorizontal: "2%" }}>
+      <View style={{ height: "70%", paddingHorizontal: "2%" }}>
         <Text
           style={{
             color: "white",
@@ -77,6 +61,9 @@ function QRegisterScreen({ navigation }) {
         >
           <Text style={{ color: "white" }}>Forgot your Email ?</Text>
         </TouchableOpacity>
+      </View>
+
+      <View style={{ height: "15%" }}>
         <TouchableOpacity
           onPress={() => navigation.navigate("RecoveryCode")}
           style={{
@@ -86,7 +73,6 @@ function QRegisterScreen({ navigation }) {
             backgroundColor: "white",
             borderRadius: 24,
             alignSelf: "center",
-            marginTop: "65%",
           }}
         >
           <Text
@@ -105,6 +91,29 @@ function QRegisterScreen({ navigation }) {
     </SafeAreaView>
   );
 }
-//nothing below here
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    backgroundColor: "#52307c",
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight + 20 : 0,
+  },
+  input: {
+    paddingVertical: "3.5%",
+    paddingRight: "50%",
+    textAlignVertical: "center",
+    backgroundColor: "#E5E5E5",
+    borderRadius: 24,
+  },
+  button: {
+    paddingVertical: "3.5%",
+    paddingHorizontal: "30%",
+    textAlign: "center",
+    textAlignVertical: "center",
+    backgroundColor: "#7041EE",
+    borderRadius: 24,
+  },
+});
 
 export default QRegisterScreen;
