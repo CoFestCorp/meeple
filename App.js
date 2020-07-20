@@ -7,8 +7,8 @@ import RegisterScreen from "./Screens/Registry";
 import LoginScreen from "./Screens/Login";
 import HomeScreen from "./Screens/Home";
 import QRegisterScreen from "./Screens/QRegistry";
-import { TouchableOpacity, AppRegistry } from "react-native";
-import stylesApp from "./css";
+import { TouchableOpacity, AppRegistry, StyleSheet } from "react-native";
+
 import RecoveryCodeScreen from "./Screens/RecoveryCode";
 import PhoneNumberScreen from "./Screens/PhoneNumberRecovery";
 import NewPasswordScreenScreen from "./Screens/NewPassword";
@@ -108,4 +108,9 @@ function App() {
   );
 }
 
+const stylesApp = StyleSheet.create({
+  title: {
+    marginTop: 50,
+  },
+});
 export default App;

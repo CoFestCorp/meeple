@@ -9,7 +9,7 @@ import {
   PanResponder,
   TouchableOpacity,
 } from "react-native";
-import styles from "../css";
+
 import { MaterialCommunityIcons as Icon } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 const SCREEN_HEIGHT = Dimensions.get("window").height;

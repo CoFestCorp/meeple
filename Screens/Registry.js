@@ -68,7 +68,8 @@ const styles = StyleSheet.create({
   },
   input: {
     paddingVertical: "3.5%",
-    paddingRight: "50%",
+    paddingRight: "45%",
+    paddingLeft: "5%",
     textAlignVertical: "center",
     backgroundColor: "#E5E5E5",
     borderRadius: 24,

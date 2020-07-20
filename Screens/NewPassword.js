@@ -11,7 +11,7 @@ import {
   Platform,
   StatusBar,
 } from "react-native";
-import styles from "../css";
+
 import App from "../App";
 import { MaterialCommunityIcons as Icon } from "@expo/vector-icons";
 import PasswordToggleInput from "../Components/PasswordToggleIn.js";

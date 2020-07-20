@@ -10,7 +10,7 @@ import {
   Platform,
   StatusBar,
 } from "react-native";
-import styles from "../css";
+
 import App from "../App";
 
 function PhoneNumberScreen({ navigation }) {

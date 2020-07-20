@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import { MaterialCommunityIcons as Icon } from "@expo/vector-icons";
-import styles from "../css";
+
 export default class PasswordToggleInput extends React.Component {
   constructor(props) {
     super(props);
@@ -23,6 +23,7 @@ export default class PasswordToggleInput extends React.Component {
         style={{
           flexDirection: "row",
           paddingVertical: "3.5%",
+          paddingLeft: "5%",
           backgroundColor: "#E5E5E5",
           borderRadius: 24,
         }}

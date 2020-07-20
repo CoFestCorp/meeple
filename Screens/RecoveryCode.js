@@ -10,7 +10,6 @@ import {
   Platform,
   StatusBar,
 } from "react-native";
-import styles from "../css";
 import App from "../App";
 import { Ionicons } from "@expo/vector-icons";
 

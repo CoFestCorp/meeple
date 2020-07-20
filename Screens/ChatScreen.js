@@ -8,7 +8,6 @@ import {
   Image,
   SafeAreaView,
 } from "react-native";
-import styles from "../css";
 
 import Account from "../Components/Account.js";
 import Chat from "../Components/Chat.js";

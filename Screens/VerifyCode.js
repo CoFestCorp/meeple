@@ -12,21 +12,14 @@ import {
   Logo,
   Platform,
   StatusBar,
+  StyleSheet,
 } from "react-native";
 import App from "../App";
-import styles from "../css";
 import { Ionicons } from "@expo/vector-icons";
 
 function VerifyCodeScreen({ navigation }) {
   return (
-    <SafeAreaView
-      style={{
-        flex: 1,
-        backgroundColor: "#FFFFFF",
-        paddingTop:
-          Platform.OS === "android" ? StatusBar.currentHeight + 20 : 0,
-      }}
-    >
+    <SafeAreaView style={styles.container}>
       <Image
         style={{ width: "20%", height: "15%", alignSelf: "center" }}
         fadeDuration={1000}
@@ -34,48 +27,53 @@ function VerifyCodeScreen({ navigation }) {
       />
 
       <View style={{ flex: 1, paddingHorizontal: "2%" }}>
-        <Text
-          style={{
-            color: "#9b4ae6",
-            fontSize: 25,
-            fontWeight: "bold",
-            paddingVertical: "5%",
-          }}
-        >
-          Verification code
-        </Text>
+        <Text style={styles.title}>Verification code</Text>
         <Text style={{ color: "#9b4ae6", fontSize: 16, marginBottom: "15%" }}>
           Please enter the verification code you received via text.
         </Text>
 
-        <TextInput
-          placeholder="Verification code"
-          style={{
-            paddingVertical: "3.5%",
-            paddingRight: "50%",
-            textAlignVertical: "center",
-            backgroundColor: "#E5E5E5",
-            borderRadius: 24,
-          }}
-        />
+        <TextInput placeholder="Verification code" style={styles.input} />
         <TouchableOpacity
           onPress={() => navigation.navigate("UserHome")}
-          style={{
-            width: 305,
-            height: 58,
-            marginTop: "40%",
-            alignSelf: "center",
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: "#7041EE",
-            borderRadius: 24,
-          }}
+          style={styles.touchable}
         >
-          <Text style={styles.loginT2}>Submit</Text>
+          <Text style={styles.button}>Submit</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
 }
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#FFFFFF",
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight + 20 : 0,
+  },
+  title: {
+    color: "#9b4ae6",
+    fontSize: 25,
+    fontWeight: "bold",
+    paddingVertical: "5%",
+  },
+  input: {
+    paddingVertical: "3.5%",
+    paddingRight: "45%",
+    paddingLeft: "5%",
+    textAlignVertical: "center",
+    backgroundColor: "#E5E5E5",
+    borderRadius: 24,
+  },
+  touchable: {
+    width: 305,
+    height: 58,
+    marginTop: "40%",
+    alignSelf: "center",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#7041EE",
+    borderRadius: 24,
+  },
+  button: { color: "white", fontWeight: "bold", fontSize: 25 },
+});
 export default VerifyCodeScreen;
