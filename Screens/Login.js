@@ -29,7 +29,7 @@ const LoginScreen = ({ navigation }) => {
       </View>
       <View style={{ height: "45%" }}>
         <TouchableOpacity
-          onPress={() => navigation.navigate("UserHome")}
+          onPress={() => navigation.navigate("Main")}
           style={styles.button}
         >
           <Text style={{ color: "white", fontWeight: "bold", fontSize: 25 }}>

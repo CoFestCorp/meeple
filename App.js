@@ -7,6 +7,7 @@ import RegisterScreen from "./Screens/Registry";
 import LoginScreen from "./Screens/Login";
 import HomeScreen from "./Screens/Home";
 import QRegisterScreen from "./Screens/QRegistry";
+import Main from "./Screens/Main";
 import { TouchableOpacity, AppRegistry, StyleSheet } from "react-native";
 
 import RecoveryCodeScreen from "./Screens/RecoveryCode";
@@ -72,6 +73,12 @@ function App() {
           styles={stylesApp.title}
           name="UserHome"
           component={UserHomeScreen}
+        />
+        <Stack.Screen
+          options={{ headerShown: false }}
+          styles={stylesApp.title}
+          name="Main"
+          component={Main}
         />
         <Stack.Screen
           options={{ headerShown: false }}
