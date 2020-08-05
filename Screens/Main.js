@@ -12,6 +12,7 @@ import {
 import { NavigationContainer } from "@react-navigation/native";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import SwipeCard from "../Components/SwipeCards.js";
+import Chat from "../Components/Chat.js";
 
 import { TouchableOpacity } from "react-native-gesture-handler";
 
@@ -24,14 +25,27 @@ import {
 
 function ChatScreen() {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Chat!</Text>
+    <View
+      style={{
+        flex: 1,
+
+        backgroundColor: "#FFFFFF",
+      }}
+    >
+      <Chat />
+      <Chat />
+      <Chat />
+      <Chat />
+      <Chat />
+      <Chat />
+      <Chat />
+      <Chat />
     </View>
   );
 }
 function UserHomeScreen() {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ backgroundColor: "#FFFFFF" }}>
       <View style={{ height: "84%" }}>
         <SwipeCard />
       </View>
@@ -49,7 +63,9 @@ function UserHomeScreen() {
 
 function ProfileScreen() {
   return (
-    <SafeAreaView style={{ flex: 1, alignItems: "center" }}>
+    <SafeAreaView
+      style={{ flex: 1, alignItems: "center", backgroundColor: "#FFFFFF" }}
+    >
       <View
         style={{
           height: "50%",
@@ -89,6 +105,15 @@ function ProfileScreen() {
           />
         </TouchableOpacity>
       </View>
+      <Image
+        style={{
+          width: "30%",
+          height: "25%",
+          alignSelf: "center",
+        }}
+        fadeDuration={1000}
+        source={require("../Images/logo_transparent.png")}
+      />
     </SafeAreaView>
   );
 }
